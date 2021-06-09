@@ -1,0 +1,81 @@
+body {
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.header h1 {
+  position: relative;
+  color: black;
+  font-size: 30px;
+  padding-left: 5px;
+}
+
+.nav-bar {
+  position: absolute;
+  float: right;
+  right: 13px;
+  font-size: 25px;
+}
+
+.headline {
+  background-image: url("./Images/header-illsutration-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+}
+
+.headline .section-heading {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.section-heading h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #172b4d;
+}
+
+.section-heading h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(127, 235, 127);
+}
+
+.headline-detail {
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+.headline-detail p {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #172b4d;
+  font-size: 20px;
+  padding-bottom: 4rem;
+}
+
+.headline-detail ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.headline-detail ul li {
+  padding: 20px;
+  font-size: 30px;
+}
+
+.fa-angellist,
+.fa-twitter,
+.fa-github,
+.fa-linkedin {
+  color: #172b4d;
+}
