@@ -50,7 +50,7 @@ body {
 }
 
 .headline-detail {
-  margin-bottom: 200px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -62,14 +62,19 @@ body {
   padding-bottom: 4rem;
 }
 
-.headline-detail ul {
+.icon-link {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-link ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
 }
 
-.headline-detail ul li {
-  padding: 20px;
+.icon-link ul li {
+  padding: 13px;
   font-size: 30px;
 }
 
