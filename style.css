@@ -124,7 +124,7 @@ body {
 
 @media (max-width: 800px) {
   .flex-box {
-  flex-direction: column;
+    flex-direction: column;
   }
 }
 
