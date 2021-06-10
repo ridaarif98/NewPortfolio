@@ -107,7 +107,7 @@ body {
 .Work hr {
   align-items: center;
   width: 18%;
-  background-color: #21df8f;
+  background: #36b37e;
   height: 5px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -116,7 +116,8 @@ body {
 .grid-item {
   background-color: white;
   border: 1px solid white;
-  padding: 10px;
+  list-style-type: none;
+  padding: 1px;
   font-size: 30px;
   text-align: center;
 }
@@ -128,7 +129,8 @@ body {
   background-color: white;
   border: 1px solid #cdd2e0;
   border-radius: 5%;
-  margin: 7%;
+  margin-right: 6%;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -136,6 +138,10 @@ body {
   .flex-box {
     flex-direction: column;
   }
+}
+.flex-box .firstList {
+  padding: 0;
+  list-style: none;
 }
 
 .flex-box img {
@@ -155,6 +161,7 @@ body {
 }
 
 .list-box ul {
+  padding: 20px;
   list-style-type: none;
   display:inline-flex;
   flex-direction: row;
@@ -168,7 +175,7 @@ body {
   padding-left: 7px;
   padding-top: 7px;
   padding-bottom: 7px;
-  margin-right: 3px;
+  margin-right: 5px;
   margin-bottom: 10px;
   font-weight: bold;
   color: #3a4a42;
@@ -177,7 +184,6 @@ body {
   height: 36px;
   letter-spacing: 0.03em;
 }
-
 
 .See-btn {
   display: flex;
@@ -192,7 +198,7 @@ body {
   padding-top: 10px;
   align-self: center;
   background: #36b37f;
-  border-radius: 4px;
+  border-radius: 6px;
   width: 130px;
   height: 60px;
   font-weight: 500;
@@ -208,7 +214,7 @@ body {
   padding-top: 10px;
   align-self: center;
   background: #36b37f;
-  border-radius: 4px;
+  border-radius: 6px;
   width: 180px;
   height: 60px;
   font-weight: 500;
@@ -308,7 +314,6 @@ body {
   color: #344563;
   padding: 15px;
   margin-bottom: 10px;
-
 }
 
 .languageDetail img {
@@ -318,7 +323,6 @@ body {
   border-radius: 50%;
   margin-bottom: 50px;
 }
-
 
 .list-language {
   margin-right: 20px;
