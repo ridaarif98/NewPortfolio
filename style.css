@@ -185,6 +185,22 @@ body {
   text-align: center;
 }
 
+.see-Resume {
+  margin-top: 30px;
+  display: flex;
+  padding-left: 15px;
+  padding-top: 10px;
+  align-self: center;
+  background: #36b37f;
+  border-radius: 4px;
+  width: 180px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
 .see-project:hover,
 .see-Resume:hover {
   font-weight: bold;
@@ -218,20 +234,4 @@ body {
   font-size: 20px;
   line-height: 32px;
   color: #42526e;
-}
-
-.see-Resume {
-  margin-top: 30px;
-  display: flex;
-  padding-left: 15px;
-  padding-top: 10px;
-  align-self: center;
-  background: #36b37f;
-  border-radius: 4px;
-  width: 180px;
-  height: 60px;
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
 }
