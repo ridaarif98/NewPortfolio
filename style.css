@@ -256,11 +256,10 @@ body {
   flex-direction: column;
   padding-left: 5px;
   background: #ebf0ee;
-  border: 1px solid #C1C7D0;
+  border: 1px solid #c1c7d0;
   border-radius: 8px;
   margin: 5px;
   margin-bottom: 10px;
-  
 }
 
 @media (max-width: 800px) {
@@ -269,17 +268,17 @@ body {
   }
 }
 
-.imgDiv{
+.imgDiv {
   text-align: center;
   padding: 20px;
   margin: 15px;
 }
-.languageDetail img{
+
+.languageDetail img {
   height: 80px;
   width: 80px;
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 50%;
-  
 }
 
 .languageDetail h1 {
