@@ -99,6 +99,7 @@ body {
   font-weight: bold;
   color: #172b4d;
   padding-left: 20px;
+  padding-top: 14px;
   padding-right: 20px;
   margin-bottom: 3rem;
 }
@@ -210,7 +211,7 @@ body {
 
 .aboutMe {
   margin-top: 30px;
-  margin-bottom: 300px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,4 +235,83 @@ body {
   font-size: 20px;
   line-height: 32px;
   color: #42526e;
+}
+
+.languages {
+  background-color: whitesmoke;
+  margin-bottom: 200px;
+}
+
+.languageList {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.languageDetail {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  background: #ebf0ee;
+  border: 1px solid #C1C7D0;
+  border-radius: 8px;
+  margin: 5px;
+  margin-bottom: 10px;
+  
+}
+
+@media (max-width: 800px) {
+  .languageDetail {
+    flex-direction: column;
+  }
+}
+
+.imgDiv{
+  text-align: center;
+  padding: 20px;
+  margin: 15px;
+}
+.languageDetail img{
+  height: 80px;
+  width: 80px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  
+}
+
+.languageDetail h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.list-language {
+  margin-right: 20px;
+}
+
+.list-language ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; 
+  margin-bottom: 50px;
+}
+
+.list-language ul li {
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #36b37e;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  margin: 5px;
 }
