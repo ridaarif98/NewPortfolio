@@ -186,6 +186,8 @@ body {
 }
 
 .See-btn {
+  list-style-type: none;
+  padding: 1px;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -245,6 +247,8 @@ body {
 }
 
 .aboutMe {
+  background: url(./Images/illustration1.svg) top right  no-repeat, url(./Images/illustration2.svg) bottom 25px left no-repeat;
+  padding: 10px;
   margin-top: 30px;
   margin-bottom: 50px;
   display: flex;
