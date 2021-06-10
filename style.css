@@ -90,22 +90,31 @@ body {
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto;
   padding: 10px;
-  background-color: whitesmoke;
+  background-color: white
 }
 
 .Work h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: bold;
   color: #172b4d;
   padding-left: 20px;
   padding-top: 14px;
   padding-right: 20px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+
+.Work hr {
+  align-items: center;
+  width: 18%;
+  background-color: #21df8f;
+  height: 5px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
   border: 1px solid white;
   padding: 10px;
   font-size: 30px;
@@ -119,7 +128,7 @@ body {
   background-color: white;
   border: 1px solid #cdd2e0;
   border-radius: 5%;
-  margin: 5px;
+  margin: 7%;
   margin-bottom: 10px;
 }
 
@@ -140,29 +149,35 @@ body {
 }
 
 .list-box {
-  padding-bottom: 8px;
+  position: relative;
+  left: 0px;
+  margin-right: 5px;
 }
 
 .list-box ul {
   list-style-type: none;
-  display: flex;
+  display:inline-flex;
   flex-direction: row;
-  margin-bottom: 5px;
+  flex-wrap: wrap;
 }
 
 .list-box ul li {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 8px;
-  padding-right: 8px;
-  font-size: 15px;
-  margin: 4px;
-  margin-right: 8px;
-  font-weight: 600;
+  font-size: 12px;
+  height: 36px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+  font-weight: bold;
   color: #3a4a42;
   background: #ebf0ee;
   border-radius: 4px;
+  height: 36px;
+  letter-spacing: 0.03em;
 }
+
 
 .See-btn {
   display: flex;
@@ -171,7 +186,7 @@ body {
 }
 
 .see-project {
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   padding-left: 12px;
   padding-top: 10px;
@@ -207,6 +222,20 @@ body {
   font-weight: bold;
   background: #21df8f;
   border: 3px solid grey;
+}
+
+.see-project:active,
+.see-Resume:active {
+  font-weight: bold;
+  background: #48e4a3;
+  border: 3px solid rgb(224, 214, 214);
+}
+
+.see-project:visited,
+.see-Resume:visited {
+  font-weight: bold;
+  background: #03492c;
+  border: 3px solid rgb(201, 189, 189);
 }
 
 .aboutMe {
@@ -269,9 +298,17 @@ body {
 }
 
 .imgDiv {
+  list-style-type: none;
   text-align: center;
   padding: 20px;
   margin: 15px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  color: #344563;
+  padding: 15px;
+  margin-bottom: 10px;
+
 }
 
 .languageDetail img {
@@ -279,17 +316,9 @@ body {
   width: 80px;
   background: #fff;
   border-radius: 50%;
+  margin-bottom: 50px;
 }
 
-.languageDetail h1 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: #344563;
-  padding: 15px;
-  margin-bottom: 10px;
-}
 
 .list-language {
   margin-right: 20px;
