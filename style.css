@@ -209,38 +209,38 @@ body {
   text-align: center;
 }
 
-.see-Resume {
+.see-Resume, .contactBtn {
   margin-top: 30px;
-  display: flex;
-  padding-left: 15px;
-  padding-top: 10px;
+  padding: 12px;
   align-self: center;
   background: #36b37f;
   border-radius: 6px;
-  width: 180px;
-  height: 60px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 17px;
   color: #fff;
+  border: none;
   text-align: center;
 }
 
 .see-project:hover,
-.see-Resume:hover {
+.see-Resume:hover,
+.contactBtn:hover {
   font-weight: bold;
   background: #21df8f;
   border: 3px solid grey;
 }
 
 .see-project:active,
-.see-Resume:active {
+.see-Resume:active,
+.contactBtn:active {
   font-weight: bold;
   background: #48e4a3;
   border: 3px solid rgb(224, 214, 214);
 }
 
 .see-project:visited,
-.see-Resume:visited {
+.see-Resume:visited,
+.contactBtn:visited {
   font-weight: bold;
   background: #03492c;
   border: 3px solid rgb(201, 189, 189);
@@ -356,6 +356,7 @@ body {
   flex-direction: column;
   width: 100%;
   align-items: center;
+  margin-bottom: 150px;
 }
 
 .aboutContact p {
@@ -377,17 +378,32 @@ body {
   width: 100%;
 }
 .contactForm input {
-  width: 85%;
+ width: 85%;
  margin: 12px 0;
  height: 48px;
  border: 1px solid #d0d9d4;
  box-sizing: border-box;
  border-radius: 4px;
- padding: 16px;
- font-size: 16px;
+ padding: 15px 16px;
+ font-size: 15px;
+ line-height: 24px;
 }
 
-.contactForm input:focus {
+.contactForm textarea {
+  width: 85%;
+  height: 105px;
+  border-radius: 4px;
+  border: 1px solid #60C095;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 16px;
+  margin: 12px 0;
+  color: #091e42;
+  line-height: 24px;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
   border: 2px solid rgba(0, 0, 255, 0.65);
   outline: none;
 }
