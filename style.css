@@ -65,23 +65,28 @@ body {
 .icon-link {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .icon-link ul {
   list-style-type: none;
+  margin: 0;
   display: flex;
+  padding-left: 0;
   flex-direction: row;
 }
 
 .icon-link ul li {
   padding: 13px;
-  font-size: 30px;
+  font-size: 25px;
+  color: #505f79;
 }
 
 .fa-angellist,
 .fa-twitter,
 .fa-github,
-.fa-linkedin {
+.fa-linkedin,
+.fa-medium {
   color: #172b4d;
 }
 
@@ -209,38 +214,39 @@ body {
   text-align: center;
 }
 
-.see-Resume {
+.see-Resume,
+.contactBtn {
   margin-top: 30px;
-  display: flex;
-  padding-left: 15px;
-  padding-top: 10px;
+  padding: 12px;
   align-self: center;
   background: #36b37f;
   border-radius: 6px;
-  width: 180px;
-  height: 60px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 17px;
   color: #fff;
+  border: none;
   text-align: center;
 }
 
 .see-project:hover,
-.see-Resume:hover {
+.see-Resume:hover,
+.contactBtn:hover {
   font-weight: bold;
   background: #21df8f;
   border: 3px solid grey;
 }
 
 .see-project:active,
-.see-Resume:active {
+.see-Resume:active,
+.contactBtn:active {
   font-weight: bold;
   background: #48e4a3;
   border: 3px solid rgb(224, 214, 214);
 }
 
 .see-project:visited,
-.see-Resume:visited {
+.see-Resume:visited,
+.contactBtn:visited {
   font-weight: bold;
   background: #03492c;
   border: 3px solid rgb(201, 189, 189);
@@ -278,7 +284,7 @@ body {
 
 .languages {
   background-color: whitesmoke;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 .languageList {
@@ -337,7 +343,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .list-language ul li {
@@ -349,4 +355,90 @@ body {
   letter-spacing: 0.03em;
   font-weight: 600;
   margin: 5px;
+}
+
+.aboutContact {
+  background: url(./Images/Frame.svg)  no-repeat;
+  background-position: bottom 260px right 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.aboutContact p {
+  font-weight: bold;
+  font-size: 40px;
+  width: 327px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contactForm input {
+  width: 85%;
+  margin: 12px 0;
+  height: 48px;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px 16px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.contactForm textarea {
+  width: 85%;
+  height: 105px;
+  border-radius: 4px;
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 16px;
+  margin: 12px 0;
+  color: #091e42;
+  line-height: 24px;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border: 2px solid rgba(0, 0, 255, 0.65);
+  outline: none;
+}
+
+.email-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 189px;
+  text-align: center;
+}
+
+.email-link p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
+.aboutContact hr {
+  align-items: center;
+  width: 22%;
+  background-color: black;
+  color: #0000;
+  height: 5px;
+  border-radius: 8px;
+  margin-bottom: 5px;
 }
