@@ -278,7 +278,7 @@ body {
 
 .languages {
   background-color: whitesmoke;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 .languageList {
@@ -337,7 +337,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .list-language ul li {
@@ -349,4 +349,21 @@ body {
   letter-spacing: 0.03em;
   font-weight: 600;
   margin: 5px;
+}
+
+.aboutContact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.aboutContact p {
+  font-weight: bold;
+  font-size: 40px;
+  width: 327px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  padding: 5px;
 }
