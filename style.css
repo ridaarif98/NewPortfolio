@@ -65,23 +65,27 @@ body {
 .icon-link {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .icon-link ul {
   list-style-type: none;
   display: flex;
+  padding-left: 0;
   flex-direction: row;
 }
 
 .icon-link ul li {
   padding: 13px;
-  font-size: 30px;
+  font-size: 25px;
+  color: #505F79;
 }
 
 .fa-angellist,
 .fa-twitter,
 .fa-github,
-.fa-linkedin {
+.fa-linkedin,
+.fa-medium {
   color: #172b4d;
 }
 
@@ -352,6 +356,8 @@ body {
 }
 
 .aboutContact {
+  background: url(./Images/Frame.svg)  no-repeat;
+  background-position: bottom 60px right 0;
   display: flex;
   flex-direction: column;
   width: 100%;
