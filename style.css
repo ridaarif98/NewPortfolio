@@ -159,18 +159,6 @@ body {
   margin-bottom: 20px;
 }
 
-
-@media (min-width:800px) {
-  .Work h1 {
-    font-size: 40px;
-    line-height: 52px;
-    text-align: center;
-   }
-  .Work hr {
-    display: none;
-  }
-}
-
 .grid-item {
   background-color: white;
   border: 1px solid white;
@@ -202,7 +190,14 @@ body {
   .Work {
     margin-left: 70px;
   }
-  
+  .Work h1 {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+   }
+  .Work hr {
+    display: none;
+  }
   .flex-box {
     float: left;
     margin-right: 1%;
@@ -556,4 +551,44 @@ body {
   height: 5px;
   border-radius: 8px;
   margin-bottom: 5px;
+}
+
+@media (max-width: 700px) {
+  .hrResponsive {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .aboutContact {
+    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 30px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 30px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 40px left 200px no-repeat;
+    background-size: 120px;
+  }
+  .formResponsive {
+    display: flex;
+    flex-direction: row;
+    padding-top: 65px;
+  }
+  .formResponsive p {
+    width: 50%;
+    font-weight: 30px;
+    line-height: 52px;
+    padding-left: 135px;
+    padding-right: 25px;
+  }
+  .formResponsive .contactForm {
+    width: 50%;
+    padding-right: 135px;
+  }
+  .aboutContact hr {
+    display: none;
+  }
+ 
+   .aboutContact .icon-bg {
+    width: 100%;
+    padding-top: 70px;
+  }
+  .aboutContact .email-link {
+    display: none;
+  }
 }
