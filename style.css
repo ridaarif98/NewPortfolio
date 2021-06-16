@@ -164,7 +164,8 @@ body {
   .Work h1 {
     font-size: 40px;
     line-height: 52px;
-  }
+    text-align: center;
+   }
   .Work hr {
     display: none;
   }
@@ -198,15 +199,19 @@ body {
 }
 
 @media (min-width: 700px) {
+  .Work {
+    margin-left: 70px;
+  }
+  
   .flex-box {
     float: left;
-    margin-right: 4%;
-    margin-right: 4%;
-    width: 28%;
+    margin-right: 1%;
+    width: 28.33%;
   }
   .flex-box h1 {
     padding-left: 16px;
     padding-right: 16px;
+    text-align: center;
     line-height: 32px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -323,14 +328,44 @@ body {
 }
 
 .aboutMe {
-  background: url(./Images/illustration1.svg) top right  no-repeat, url(./Images/illustration2.svg) bottom 25px left no-repeat;
-  padding: 10px;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+@media (max-width: 700px){
+  .aboutMe {
+    background: url(./Images/illustration1.svg) top right  no-repeat, url(./Images/illustration2.svg) bottom 25px left no-repeat;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 700px){
+  .aboutMe {
+    background: url(./Images/aboutFirst.svg) top right  no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
+    background-size: 170px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+.aboutMe p {
+  text-align: center;
+  padding: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+  
+}
+
 
 .aboutMe h1 {
   font-style: normal;
@@ -353,7 +388,6 @@ body {
 }
 
 .languages {
-  background-color: whitesmoke;
   margin-bottom: 50px;
 }
 
@@ -377,9 +411,20 @@ body {
   margin-bottom: 15px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .languageDetail {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 700px){
+  .languageList {
+    margin-left: 9%;
+  }
+  .languageDetail {
+    float: left;
+    width: 28%;
+    height: 57vh;
   }
 }
 
