@@ -22,6 +22,45 @@ body {
   font-size: 25px;
 }
 
+.desktop-nav {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  left: 35%;
+}
+
+.desktop-nav ul {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+}
+
+.desktop-nav ul li {
+  padding: 10px 12px;
+  font-size: 20px;
+  margin: 0 8px;
+  height: 40px;
+}
+
+.desktop-nav ul li a {
+  color: #172b4d;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .header h1, 
+  .header .nav-bar {
+      display: none;
+  }
+}
+
 .headline {
   background-image: url("./Images/header-illsutration-mobile.png");
   background-repeat: no-repeat;
@@ -90,6 +129,8 @@ body {
   color: #172b4d;
 }
 
+
+
 .Work {
   display: grid;
   grid-template-columns: auto;
@@ -118,6 +159,17 @@ body {
   margin-bottom: 20px;
 }
 
+
+@media (min-width:800px) {
+  .Work h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .Work hr {
+    display: none;
+  }
+}
+
 .grid-item {
   background-color: white;
   border: 1px solid white;
@@ -139,9 +191,25 @@ body {
   margin-bottom: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .flex-box {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 700px) {
+  .flex-box {
+    float: left;
+    margin-right: 4%;
+    margin-right: 4%;
+    width: 28%;
+  }
+  .flex-box h1 {
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 32px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -168,6 +236,7 @@ body {
 
 .list-box ul {
   padding: 20px;
+  margin-left: 16px;
   list-style-type: none;
   display: inline-flex;
   flex-direction: row;
@@ -199,13 +268,14 @@ body {
 }
 
 .see-project {
-  margin-top: 10px;
+  margin-top: 5px;
   display: flex;
   padding-left: 12px;
   padding-top: 10px;
   align-self: center;
   background: #36b37f;
   border-radius: 6px;
+  border: none;
   width: 130px;
   height: 60px;
   font-weight: 500;
