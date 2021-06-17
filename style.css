@@ -50,13 +50,13 @@ body {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   .nav-bar ul {
     display: none;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .header h1, 
   .header .nav-bar i{
       display: none;
@@ -131,12 +131,38 @@ body {
   color: #172b4d;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .headline {
     background-image: url(./Images/Header-llustration-desktop@2x.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: inherit;
+    height: 100vh;
+  }
+  .headline .section-heading {
+    padding-top: 160px;
+    font-weight: 800;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 26px;
+    line-height: 60px;
+  }
+  .headline .headline-detail {
+    padding-left: 265px;
+    padding-right: 265px;
+    margin-bottom: 0;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .headline .headline-detail p {
+    margin-bottom: 0;
+    padding-bottom: 8px;
+  }
+  .headline .icon-link {
+    padding-top: 4px;
+    margin-top: 0;
+    margin-bottom: 100px;
   }
 }
 
@@ -189,13 +215,13 @@ body {
   margin-bottom: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   .flex-box {
     flex-direction: column;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .Work {
     margin-left: 70px;
   }
@@ -238,7 +264,8 @@ body {
 }
 
 .list-box {
-  position: relative;
+  display: flex;
+  justify-content: center;
   left: 1px;
   margin-right: 5px;
 }
@@ -338,7 +365,7 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1024px){
   .aboutMe {
     background: url(./Images/illustration1.svg) top right  no-repeat, url(./Images/illustration2.svg) bottom 25px left no-repeat;
     padding: 10px;
@@ -347,7 +374,7 @@ body {
   }
 }
 
-@media (min-width: 700px){
+@media (min-width: 1024px){
   .aboutMe {
     background: url(./Images/aboutFirst.svg) top right  no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
     background-size: 170px;
@@ -415,20 +442,20 @@ body {
   margin-bottom: 15px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   .languageDetail {
     flex-direction: column;
   }
 }
 
-@media (min-width: 700px){
+@media (min-width: 1024px){
   .languageList {
     margin-left: 9%;
   }
   .languageDetail {
     float: left;
     width: 28%;
-    height: 57vh;
+    height: 400px;
   }
 }
 
@@ -562,13 +589,13 @@ body {
   margin-bottom: 5px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   .hrResponsive {
     display: none;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .aboutContact {
     background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 30px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 30px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 40px left 200px no-repeat;
     background-size: 120px;
@@ -589,7 +616,7 @@ body {
     width: 50%;
     padding-right: 135px;
   }
-  .aboutContact hr {
+  .aboutContact .footerHr {
     display: none;
   }
  
