@@ -15,7 +15,7 @@ body {
   padding-left: 5px;
 }
 
-.nav-bar ul{
+.nav-bar ul {
   list-style-type: none;
   display: flex;
   float: none;
@@ -58,12 +58,14 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .header h1, 
-  .header .nav-bar i{
+  .header .nav-bar i {
       display: none;
   }
+
   .header .nav-bar ul {
     display: block;
   }
+
   .header .nav-bar ul li {
     padding: 10px 10px;
   }
@@ -71,7 +73,7 @@ body {
 
 @media (min-width: 1024px) {
   .header h1, 
-  .header .nav-bar i{
+  .header .nav-bar i {
       display: none;
   }
 }
@@ -108,6 +110,7 @@ body {
   margin-bottom: 40px;
   text-align: center;
 }
+
 .headline-detail p {
   padding-left: 10px;
   padding-right: 10px;
@@ -152,7 +155,6 @@ body {
   
 }
 
-
 @media (min-width: 768px) and (max-width:1024px) {
   .headline {
     background-image: url(./Images/Header-llustration-desktop@2x.png) ;
@@ -161,6 +163,7 @@ body {
     background-position: inherit;
     height: 100vh;
   }
+
   .headline .section-heading {
     padding-top: 120px;
     font-weight: 800;
@@ -169,6 +172,7 @@ body {
     padding-bottom: 26px;
     line-height: 60px;
   }
+
   .headline .headline-detail {
     padding-left: 160px;
     padding-right: 160px;
@@ -177,15 +181,18 @@ body {
     font-weight: 400;
     font-size: 20px;
   }
+
   .headline .headline-detail p {
     margin-bottom: 0;
     padding-bottom: 8px;
   }
+
   .headline .icon-link {
     padding-top: 4px;
     margin-top: 0;
     margin-bottom: 20px;
-  } 
+  }
+
   .headline .fa-chevron-circle-down {
     margin-bottom: 70px;
   }
@@ -199,6 +206,7 @@ body {
     background-position: inherit;
     height: 90vh;
   }
+
   .headline .section-heading {
     padding-top: 160px;
     font-weight: 800;
@@ -207,6 +215,7 @@ body {
     padding-bottom: 26px;
     line-height: 60px;
   }
+
   .headline .headline-detail {
     padding-left: 265px;
     padding-right: 265px;
@@ -215,15 +224,18 @@ body {
     font-weight: 400;
     font-size: 20px;
   }
+
   .headline .headline-detail p {
     margin-bottom: 0;
     padding-bottom: 8px;
   }
+
   .headline .icon-link {
     padding-top: 4px;
     margin-top: 0;
     margin-bottom: 20px;
   }
+
   .headline .fa-chevron-circle-down {
     margin-bottom: 70px;
   }
@@ -290,15 +302,18 @@ body {
     font-size: 40px;
     line-height: 52px;
     text-align: center;
-   }
+  }
+
   .Work hr {
     display: none;
   }
+
   .flex-box {
     float: left;
     margin-right: 2%;
     width: 47%;
   }
+
   .flex-box h1 {
     padding-left: 16px;
     padding-right: 16px;
@@ -313,19 +328,23 @@ body {
   .Work {
     margin-left: 70px;
   }
+
   .Work h1 {
     font-size: 40px;
     line-height: 52px;
     text-align: center;
-   }
+  }
+
   .Work hr {
     display: none;
   }
+
   .flex-box {
     float: left;
     margin-right: 1%;
     width: 28.33%;
   }
+
   .flex-box h1 {
     padding-left: 16px;
     padding-right: 16px;
@@ -468,7 +487,8 @@ body {
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 50px;
-  } 
+}
+
 .aboutMe p {
   text-align: center;
   padding: 15px;
@@ -482,7 +502,7 @@ body {
 }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .aboutMe {
     background: url(./Images/aboutFirst.svg) top right  no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
     background-size: 170px;
@@ -502,7 +522,6 @@ body {
   margin-left: 10%;
   margin-right: 10%;
 }
-  
 }
 
 .aboutMe h1 {
@@ -555,23 +574,23 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
-  
+@media (min-width: 768px) and (max-width: 1024px) { 
   .languageDetail {
     float: left;
     width: 48%;
     height: 400px;
   }
+
   .third-skill {
     margin-left: 26%;
     margin-right: 26%;
   }
-
 }
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .languageList {
     margin-left: 9%;
   }
+
   .languageDetail {
     float: left;
     width: 28%;
@@ -708,6 +727,7 @@ body {
   border-radius: 8px;
   margin-bottom: 5px;
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .aboutContact {
     background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 30px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 30px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 40px left 200px no-repeat;
@@ -741,6 +761,7 @@ body {
     display: none;
   }
 }
+
 @media (min-width: 1024px) {
   .aboutContact {
     background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 30px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 30px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 40px left 200px no-repeat;
@@ -772,5 +793,5 @@ body {
   }
   .aboutContact .email-link {
     display: none;
-  }
+ }
 }
