@@ -607,7 +607,7 @@ body {
   }
 
   .aboutContact {
-  background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 30px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 30px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 40px left 200px no-repeat;
+  background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 70px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 50px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 80px left 200px no-repeat;
   background-size: 120px;
   }
 
@@ -615,6 +615,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 65px;
+  margin-bottom: 150px;
   }
 
   .formResponsive p {
@@ -634,8 +635,8 @@ body {
   }
 
   .aboutContact .icon-bg {
+    border-top: solid 1px #dfe1e6;
   width: 100%;
-  padding-top: 70px;
   }
 
   .aboutContact .email-link {
@@ -749,7 +750,7 @@ body {
     }
     
   .aboutContact {
-    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 30px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 30px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 40px left 200px no-repeat;
+    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 80px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 60px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 90px left 200px no-repeat;
     background-size: 120px;
   }
 
@@ -757,6 +758,7 @@ body {
     display: flex;
     flex-direction: row;
     padding-top: 65px;
+    margin-bottom: 100px;
   }
 
   .formResponsive p {
@@ -776,8 +778,8 @@ body {
   }
 
   .aboutContact .icon-bg {
+    border-top: solid 1px #dfe1e6;;
     width: 100%;
-    padding-top: 70px;
   }
 
   .aboutContact .email-link {
