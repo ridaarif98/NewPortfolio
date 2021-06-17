@@ -50,34 +50,6 @@ body {
   font-size: 25px;
 }
 
-@media (max-width: 768px) {
-  .nav-bar ul {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header h1,
-  .header .nav-bar i {
-    display: none;
-  }
-
-  .header .nav-bar ul {
-    display: block;
-  }
-
-  .header .nav-bar ul li {
-    padding: 10px 10px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header h1,
-  .header .nav-bar i {
-    display: none;
-  }
-}
-
 .headline {
   background-image: url("./Images/header-illsutration-mobile.png");
   background-repeat: no-repeat;
@@ -103,7 +75,7 @@ body {
 .section-heading h2 {
   font-size: 40px;
   font-weight: bold;
-  color: rgb(127, 235, 127);
+  color: #36b37f;
 }
 
 .headline-detail {
@@ -154,91 +126,6 @@ body {
   color: #172b4d;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .headline {
-    background-image: url(./Images/Header-llustration-desktop@2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: inherit;
-    height: 100vh;
-  }
-
-  .headline .section-heading {
-    padding-top: 120px;
-    font-weight: 800;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 26px;
-    line-height: 60px;
-  }
-
-  .headline .headline-detail {
-    padding-left: 160px;
-    padding-right: 160px;
-    margin-bottom: 0;
-    line-height: 32px;
-    font-weight: 400;
-    font-size: 20px;
-  }
-
-  .headline .headline-detail p {
-    margin-bottom: 0;
-    padding-bottom: 8px;
-  }
-
-  .headline .icon-link {
-    padding-top: 4px;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-
-  .headline .fa-chevron-circle-down {
-    margin-bottom: 70px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .headline {
-    background-image: url(./Images/Header-llustration-desktop@2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: inherit;
-    height: 90vh;
-  }
-
-  .headline .section-heading {
-    padding-top: 160px;
-    font-weight: 800;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 26px;
-    line-height: 60px;
-  }
-
-  .headline .headline-detail {
-    padding-left: 265px;
-    padding-right: 265px;
-    margin-bottom: 0;
-    line-height: 32px;
-    font-weight: 400;
-    font-size: 20px;
-  }
-
-  .headline .headline-detail p {
-    margin-bottom: 0;
-    padding-bottom: 8px;
-  }
-
-  .headline .icon-link {
-    padding-top: 4px;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-
-  .headline .fa-chevron-circle-down {
-    margin-bottom: 70px;
-  }
-}
 
 .Work {
   display: grid;
@@ -289,69 +176,6 @@ body {
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .flex-box {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .Work h1 {
-    font-size: 40px;
-    line-height: 52px;
-    text-align: center;
-  }
-
-  .Work hr {
-    display: none;
-  }
-
-  .flex-box {
-    float: left;
-    margin-right: 2%;
-    width: 47%;
-  }
-
-  .flex-box h1 {
-    padding-left: 16px;
-    padding-right: 16px;
-    text-align: center;
-    line-height: 32px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .Work {
-    margin-left: 70px;
-  }
-
-  .Work h1 {
-    font-size: 40px;
-    line-height: 52px;
-    text-align: center;
-  }
-
-  .Work hr {
-    display: none;
-  }
-
-  .flex-box {
-    float: left;
-    margin-right: 1%;
-    width: 28.33%;
-  }
-
-  .flex-box h1 {
-    padding-left: 16px;
-    padding-right: 16px;
-    text-align: center;
-    line-height: 32px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-}
 
 .flex-box .firstList {
   padding: 0;
@@ -411,13 +235,13 @@ body {
 .see-project {
   margin-top: 5px;
   display: flex;
-  /* padding-left: 12px;
-  padding-top: 10px; */
-  padding: 10px 12px;
+  padding-left: 12px;
+  padding-top: 10px;
   align-self: center;
   background: #36b37f;
   border-radius: 6px;
   border: none;
+  width: 130px;
   height: 60px;
   font-weight: 500;
   font-size: 20px;
@@ -446,7 +270,6 @@ body {
   background: #21df8f;
   border: 3px solid grey;
   transform: scale(1.1);
-  transition: all 0.2s ease-in;
 }
 
 .see-project:active,
@@ -471,58 +294,6 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .aboutMe {
-    background: url(./Images/illustration1.svg) top right  no-repeat, url(./Images/illustration2.svg) bottom 25px left no-repeat;
-    padding: 10px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .aboutMe {
-    background: url(./Images/aboutFirst.svg) top right  no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
-    background-size: 150px;
-    padding: 10px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
-
-  .aboutMe p {
-    text-align: center;
-    padding: 15px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 32px;
-    color: #42526e;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .aboutMe {
-    background: url(./Images/aboutFirst.svg) top right  no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
-    background-size: 170px;
-    padding: 10px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
-
-  .aboutMe p {
-    text-align: center;
-    padding: 15px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 32px;
-    color: #42526e;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
 
 .aboutMe h1 {
   font-style: normal;
@@ -568,36 +339,6 @@ body {
   margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
-  .languageDetail {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .languageDetail {
-    float: left;
-    width: 48%;
-    height: 400px;
-  }
-
-  .third-skill {
-    margin-left: 26%;
-    margin-right: 26%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .languageList {
-    margin-left: 9%;
-  }
-
-  .languageDetail {
-    float: left;
-    width: 28%;
-    height: 450px;
-  }
-}
 
 .imgDiv {
   list-style-type: none;
@@ -729,49 +470,286 @@ body {
   margin-bottom: 5px;
 }
 
-.formResponsive p:hover  {
-  transform: translate(20px, 0);
+
+
+/*media quries*/
+
+@media (max-width: 768px) {
+  .nav-bar ul {
+    display: none;
+  }
+
+  .flex-box {
+    flex-direction: column;
+  }
+  .aboutMe {
+    background: url(./Images/illustration1.svg) top right  no-repeat, url(./Images/illustration2.svg) bottom 25px left no-repeat;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .languageDetail {
+    flex-direction: column;
+  }
 }
 
+/*Media query for medium screen*/
 @media (min-width: 768px) and (max-width: 1024px) {
+  .header h1,
+  .header .nav-bar i {
+    display: none;
+  }
+
+  .header .nav-bar ul {
+    display: block;
+  }
+
+  .header .nav-bar ul li {
+    padding: 10px 10px;
+  }
+  
+  .headline {
+    background-image: url(./Images/Header-llustration-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    height: 100vh;
+  }
+  
+  .headline .section-heading {
+    padding-top: 120px;
+    font-weight: 800;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 26px;
+    line-height: 60px;
+  }
+  
+  .headline .headline-detail {
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-bottom: 0;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .headline .headline-detail p {
+    margin-bottom: 0;
+    padding-bottom: 8px;
+  }
+  
+  .headline .icon-link {
+    padding-top: 4px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .headline .fa-chevron-circle-down {
+    margin-bottom: 70px;
+  }
+
+  .Work h1 {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  .Work hr {
+    display: none;
+  }
+
+  .flex-box {
+    float: left;
+    margin-right: 2%;
+    width: 47%;
+  }
+
+  .flex-box h1 {
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .aboutMe {
+    background: url(./Images/aboutFirst.svg) top right  no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
+    background-size: 150px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .aboutMe p {
+    text-align: center;
+    padding: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #42526e;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .languageDetail {
+    float: left;
+    width: 48%;
+    height: 400px;
+  }
+
+  .third-skill {
+    margin-left: 26%;
+    margin-right: 26%;
+  }
+
   .aboutContact {
-    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 30px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 30px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 40px left 200px no-repeat;
-    background-size: 120px;
+  background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 30px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 30px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 40px left 200px no-repeat;
+  background-size: 120px;
   }
 
   .formResponsive {
-    display: flex;
-    flex-direction: column;
-    padding-top: 65px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 65px;
   }
 
   .formResponsive p {
-    width: 100%;
-    line-height: 52px;
-    padding-left: 100px;
-    padding-right: 100px;
+  width: 100%;
+  line-height: 52px;
+  padding-left: 100px;
+  padding-right: 100px;
   }
 
   .formResponsive .contactForm {
-    width: 100%;
-    justify-content: center;
+  width: 100%;
+  justify-content: center;
   }
 
   .aboutContact .footerHr {
-    display: none;
+  display: none;
   }
 
   .aboutContact .icon-bg {
-    width: 100%;
-    padding-top: 70px;
+  width: 100%;
+  padding-top: 70px;
   }
 
   .aboutContact .email-link {
-    display: none;
+  display: none;
   }
 }
 
+/*For desktop*/
 @media (min-width: 1024px) {
+  .header h1,
+  .header .nav-bar i {
+    display: none;
+  }
+
+  .headline {
+  background-image: url(./Images/Header-llustration-desktop@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+  height: 90vh;
+  }
+
+  .headline .section-heading {
+  padding-top: 160px;
+  font-weight: 800;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 26px;
+  line-height: 60px;
+  }
+
+  .headline .headline-detail {
+  padding-left: 265px;
+  padding-right: 265px;
+  margin-bottom: 0;
+  line-height: 32px;
+  font-weight: 400;
+  font-size: 20px;
+  }
+
+  .headline .headline-detail p {
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  }
+
+  .headline .icon-link {
+  padding-top: 4px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  }
+
+  .headline .fa-chevron-circle-down {
+  margin-bottom: 70px;
+  }
+
+  .Work {
+  margin-left: 70px;
+  }
+
+  .Work h1 {
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  }
+
+  .Work hr {
+  display: none;
+  }
+
+  .flex-box {
+  float: left;
+  margin-right: 1%;
+  width: 28.33%;
+  }
+
+  .flex-box h1 {
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .aboutMe {
+    background: url(./Images/aboutFirst.svg) top right  no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
+    background-size: 170px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .aboutMe p {
+    text-align: center;
+    padding: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #42526e;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+    .languageList {
+      margin-left: 9%;
+    }
+  
+    .languageDetail {
+      float: left;
+      width: 28%;
+      height: 450px;
+    }
+    
   .aboutContact {
     background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 30px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 30px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 40px left 200px no-repeat;
     background-size: 120px;
@@ -807,4 +785,8 @@ body {
   .aboutContact .email-link {
     display: none;
   }
+
+
 }
+
+
