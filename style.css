@@ -411,13 +411,13 @@ body {
 .see-project {
   margin-top: 5px;
   display: flex;
-  padding-left: 12px;
-  padding-top: 10px;
+  /* padding-left: 12px;
+  padding-top: 10px; */
+  padding: 10px 12px;
   align-self: center;
   background: #36b37f;
   border-radius: 6px;
   border: none;
-  width: 130px;
   height: 60px;
   font-weight: 500;
   font-size: 20px;
@@ -446,6 +446,7 @@ body {
   background: #21df8f;
   border: 3px solid grey;
   transform: scale(1.1);
+  transition: all 0.2s ease-in;
 }
 
 .see-project:active,
@@ -726,6 +727,10 @@ body {
   height: 5px;
   border-radius: 8px;
   margin-bottom: 5px;
+}
+
+.formResponsive p:hover  {
+  transform: translate(20px, 0);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
