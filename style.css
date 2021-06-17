@@ -445,6 +445,7 @@ body {
   font-weight: bold;
   background: #21df8f;
   border: 3px solid grey;
+  transform: scale(1.1);
 }
 
 .see-project:active,
