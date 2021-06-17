@@ -642,7 +642,6 @@ body {
   display: none;
   }
 }
-
 /*For desktop*/
 @media (min-width: 1024px) {
   .header h1,
@@ -657,7 +656,6 @@ body {
   background-position: inherit;
   height: 90vh;
   }
-
   .headline .section-heading {
   padding-top: 160px;
   font-weight: 800;
@@ -788,5 +786,3 @@ body {
 
 
 }
-
-
