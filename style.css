@@ -25,7 +25,7 @@ body {
   justify-content: center;
   height: 40px;
   top: 16px;
-  margin-top: 16px;
+  margin-top: 24px;
   margin-bottom: 60px;
 }
 
@@ -42,17 +42,30 @@ body {
 .nav-bar ul li a {
   color: #344563;
 }
-.nav-bar i{
+
+.nav-bar i {
   position: absolute;
   float: right;
   right: 13px;
   font-size: 25px;
 }
 
-
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .nav-bar ul {
     display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header h1, 
+  .header .nav-bar i{
+      display: none;
+  }
+  .header .nav-bar ul {
+    display: block;
+  }
+  .header .nav-bar ul li {
+    padding: 10px 10px;
   }
 }
 
@@ -68,6 +81,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: inherit;
+  margin-bottom: 30px;
 }
 
 .headline .section-heading {
@@ -94,13 +108,12 @@ body {
   margin-bottom: 40px;
   text-align: center;
 }
-
 .headline-detail p {
   padding-left: 10px;
   padding-right: 10px;
   color: #172b4d;
   font-size: 20px;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 .icon-link {
@@ -131,13 +144,60 @@ body {
   color: #172b4d;
 }
 
-@media (min-width: 1024px) {
+.headline .fa-chevron-circle-down {
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 30px;
+  color: #172b4d;;
+  
+}
+
+
+@media (min-width: 768px) and (max-width:1024px) {
   .headline {
     background-image: url(./Images/Header-llustration-desktop@2x.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: inherit;
     height: 100vh;
+  }
+  .headline .section-heading {
+    padding-top: 120px;
+    font-weight: 800;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 26px;
+    line-height: 60px;
+  }
+  .headline .headline-detail {
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-bottom: 0;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .headline .headline-detail p {
+    margin-bottom: 0;
+    padding-bottom: 8px;
+  }
+  .headline .icon-link {
+    padding-top: 4px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  } 
+  .headline .fa-chevron-circle-down {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headline {
+    background-image: url(./Images/Header-llustration-desktop@2x.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    height: 90vh;
   }
   .headline .section-heading {
     padding-top: 160px;
@@ -162,7 +222,10 @@ body {
   .headline .icon-link {
     padding-top: 4px;
     margin-top: 0;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
+  }
+  .headline .fa-chevron-circle-down {
+    margin-bottom: 70px;
   }
 }
 
@@ -215,9 +278,34 @@ body {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .flex-box {
     flex-direction: column;
+  }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+  
+  .Work h1 {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+   }
+  .Work hr {
+    display: none;
+  }
+  .flex-box {
+    float: left;
+    margin-right: 2%;
+    width: 47%;
+  }
+  .flex-box h1 {
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -359,19 +447,39 @@ body {
 }
 
 .aboutMe {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 768px){
   .aboutMe {
     background: url(./Images/illustration1.svg) top right  no-repeat, url(./Images/illustration2.svg) bottom 25px left no-repeat;
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 50px;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .aboutMe {
+    background: url(./Images/aboutFirst.svg) top right  no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
+    background-size: 150px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  } 
+.aboutMe p {
+  text-align: center;
+  padding: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 }
 
 @media (min-width: 1024px){
@@ -396,7 +504,6 @@ body {
 }
   
 }
-
 
 .aboutMe h1 {
   font-style: normal;
@@ -442,12 +549,25 @@ body {
   margin-bottom: 15px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .languageDetail {
     flex-direction: column;
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
+  
+  .languageDetail {
+    float: left;
+    width: 48%;
+    height: 400px;
+  }
+  .third-skill {
+    margin-left: 26%;
+    margin-right: 26%;
+  }
+
+}
 @media (min-width: 1024px){
   .languageList {
     margin-left: 9%;
@@ -455,7 +575,7 @@ body {
   .languageDetail {
     float: left;
     width: 28%;
-    height: 400px;
+    height: 450px;
   }
 }
 
@@ -588,13 +708,39 @@ body {
   border-radius: 8px;
   margin-bottom: 5px;
 }
-
-@media (max-width: 1024px) {
-  .hrResponsive {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .aboutContact {
+    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 30px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 30px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 40px left 200px no-repeat;
+    background-size: 120px;
+  }
+  .formResponsive {
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+  }
+  .formResponsive p {
+    width: 100%;
+    font-weight: 30px;
+    line-height: 52px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .formResponsive .contactForm {
+    width: 100%;
+    justify-content: center;
+  }
+  .aboutContact .footerHr {
+    display: none;
+  }
+ 
+   .aboutContact .icon-bg {
+    width: 100%;
+    padding-top: 70px;
+  }
+  .aboutContact .email-link {
     display: none;
   }
 }
-
 @media (min-width: 1024px) {
   .aboutContact {
     background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 30px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 30px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 40px left 200px no-repeat;
