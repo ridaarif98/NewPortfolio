@@ -178,7 +178,7 @@ body {
 
 .flex-box:hover {
   transform: scale(1.05);
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 
 .flex-box .firstList {
@@ -343,6 +343,10 @@ body {
   margin-bottom: 15px;
 }
 
+.languageDetail:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease;
+}
 
 .imgDiv {
   list-style-type: none;
