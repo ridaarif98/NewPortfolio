@@ -469,7 +469,7 @@ body {
   margin-bottom: 5px;
 }
 
-/*media quries*/
+/* media quries */
 @media (max-width: 768px) {
   .nav-bar ul {
     display: none;
@@ -491,7 +491,7 @@ body {
   }
 }
 
-/*Media query for medium screen*/
+/* Media query for medium screen */
 @media (min-width: 768px) and (max-width: 1024px) {
   .header h1,
   .header .nav-bar i {
@@ -505,7 +505,7 @@ body {
   .header .nav-bar ul li {
     padding: 10px 10px;
   }
-  
+
   .headline {
     background-image: url(./Images/Header-llustration-desktop@2x.png);
     background-repeat: no-repeat;
@@ -513,7 +513,7 @@ body {
     background-position: inherit;
     height: 110vh;
   }
-  
+
   .headline .section-heading {
     padding-top: 120px;
     font-weight: 800;
@@ -522,7 +522,7 @@ body {
     padding-bottom: 26px;
     line-height: 60px;
   }
-  
+
   .headline .headline-detail {
     padding-left: 160px;
     padding-right: 160px;
@@ -531,18 +531,18 @@ body {
     font-weight: 400;
     font-size: 20px;
   }
-  
+
   .headline .headline-detail p {
     margin-bottom: 0;
     padding-bottom: 8px;
   }
-  
+
   .headline .icon-link {
     padding-top: 4px;
     margin-top: 0;
     margin-bottom: 20px;
   }
-  
+
   .headline .fa-chevron-circle-down {
     margin-bottom: 70px;
   }
@@ -560,15 +560,15 @@ body {
   .grid-item {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     gap: 20px 10px;   
-   }
-  
+  }
+
   .flex-box {
-     display: inline-flex;
-     margin-right: 2%;
-     width: 47%;
+    display: inline-flex;
+    margin-right: 2%;
+    width: 47%;
   }
 
   .flex-box h1 {
@@ -601,12 +601,12 @@ body {
     margin-left: 10%;
     margin-right: 10%;
   }
-  
+
   .languageList {
     display: grid;
-    grid-template-columns: repeat(2,48%);
+    grid-template-columns: repeat(2, 48%);
     grid-auto-rows: 400px;
-    justify-content: center; 
+    justify-content: center;
   }
 
   .third-skill {
@@ -617,43 +617,43 @@ body {
   }
 
   .aboutContact {
-  background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 70px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 50px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 80px left 200px no-repeat;
-  background-size: 120px;
+    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 70px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 50px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 80px left 200px no-repeat;
+    background-size: 120px;
   }
 
   .formResponsive {
-  display: flex;
-  flex-direction: column;
-  padding-top: 65px;
-  margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    margin-bottom: 150px;
   }
 
   .formResponsive p {
-  width: 100%;
-  line-height: 52px;
-  padding-left: 100px;
-  padding-right: 100px;
+    width: 100%;
+    line-height: 52px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .formResponsive .contactForm {
-  width: 100%;
-  justify-content: center;
+    width: 100%;
+    justify-content: center;
   }
 
   .aboutContact .footerHr {
-  display: none;
+    display: none;
   }
 
   .aboutContact .icon-bg {
     border-top: solid 1px #dfe1e6;
-  width: 100%;
+    width: 100%;
   }
 
   .aboutContact .email-link {
-  display: none;
+    display: none;
   }
 }
-/*For desktop*/
+/* For desktop */
 @media (min-width: 1024px) {
   .header h1,
   .header .nav-bar i {
@@ -684,6 +684,18 @@ body {
     line-height: 32px;
     font-weight: 400;
     font-size: 20px;
+  }
+
+  .aboutMe p {
+    text-align: center;
+    padding: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #42526e;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .headline .headline-detail p {
@@ -748,26 +760,14 @@ body {
     margin-bottom: 50px;
   }
 
-  .aboutMe p {
-    text-align: center;
-    padding: 15px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 32px;
-    color: #42526e;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
   .languageList {
     width: 100%;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: auto;
-    justify-content: center; 
+    justify-content: center;
   }
-    
+ 
   .aboutContact {
     background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 80px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 60px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 90px left 200px no-repeat;
     background-size: 120px;
@@ -797,7 +797,7 @@ body {
   }
 
   .aboutContact .icon-bg {
-    border-top: solid 1px #dfe1e6;;
+    border-top: solid 1px #dfe1e6;
     width: 100%;
   }
 
