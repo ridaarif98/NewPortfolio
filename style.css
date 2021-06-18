@@ -176,6 +176,10 @@ body {
   margin-bottom: 10px;
 }
 
+.flex-box:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease;
+}
 
 .flex-box .firstList {
   padding: 0;
