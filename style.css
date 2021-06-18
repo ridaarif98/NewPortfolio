@@ -342,7 +342,6 @@ body {
   margin-bottom: 15px;
 }
 
-
 .languageDetail:hover {
   transition: all 0.4s ease-out;
   transform: scale(1.03);
@@ -739,7 +738,7 @@ body {
     line-height: 52px;
     text-align: center;
   }
-  
+
   .Work hr {
     display: none;
   }
