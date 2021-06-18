@@ -13,12 +13,20 @@
         <title>My Portfolio</title>
     </head>
 <body>
-<header class="header col-12">
+<header class="header"> 
   <a href="#"><h1>Welcome</h1></a>
   <nav class="nav-bar">
+    
+      <ul class="nav-bar-list">
+        <li><a href="#">Portfolio</a> </li>
+        <li> <a href="#">About</a> </li>
+        <li> <a href="#">Contact</a> </li>
+      </ul> 
+    
     <i class="fa fa-bars" ></i>
   </nav>
 </header>
+<section>
 <section class="headline col-12">
   <hgroup class="section-heading">
     <h1>Hey there. I'm Rida</h1>
@@ -42,7 +50,9 @@
      <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
      </ul>
     </div>
+    <i class="fa fa-chevron-circle-down"></i>
   </div>
+</section>
 </section>
 <section class="Work"> 
   <h1>My Recent Works</h1>
@@ -195,7 +205,7 @@
     </ul>
    </div>
   </li>
-  <li class="languageDetail">
+  <li class="languageDetail third-skill">
    <ul class="imgDiv">
     <li><img src="./Images/elipse4.png" alt="Ellipse"></li>
     <li>Skills</li>
@@ -213,6 +223,7 @@
 </ul>
 </section>
 <footer class="aboutContact">
+  <div class="formResponsive">
   <p>
     I'm alwyas ineterested in hearing about new projects, so if you'd 
     like to chat please get in touch.
@@ -220,10 +231,12 @@
   <form action="https://formspree.io/f/mvodrqbw" method="POST" class="contactForm">
     <input type="text" name="user_name" placeholder="Full Name" maxlength="30" required>
     <input type="email" name="user_email" placeholder="Email address" required>
-    <textarea name="user_text" maxlength="500"  required>Enter text here</textarea>
+    <textarea name="user_text" maxlength="500" placeholder="Enter the text here"  required></textarea>
     <button type="submit" class="contactBtn">Get in Touch</button>
   </form>
+</div>
   <div class="icon-link icon-bg">
+    
     <ul>
     <li><a href="#"><span class="fa fa-twitter"></span></a></li>
     <li><a href="#"><span class="fa fa-angellist"></span></a></li>
@@ -233,7 +246,7 @@
     </ul>
    </div>
    <div class="email-link"><p>ridaarif16@gmail.com </p></div>
-   <hr>
+   <hr class="footerHr">
 </footer>
 </body>
 </html>
