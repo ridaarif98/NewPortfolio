@@ -42,7 +42,7 @@ body {
   line-height: 20px;
 }
 
-.nav-bar-list  li a {
+.nav-bar-list li a {
   color: #344563;
 }
 
@@ -532,6 +532,25 @@ body {
     font-size: 20px;
   }
 
+  .aboutMe p {
+    text-align: center;
+    padding: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #42526e;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .formResponsive p {
+    width: 100%;
+    line-height: 52px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .headline .headline-detail p {
     margin-bottom: 0;
     padding-bottom: 8px;
@@ -562,7 +581,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
-    gap: 20px 10px;   
+    gap: 20px 10px;
   }
 
   .flex-box {
@@ -588,18 +607,6 @@ body {
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 50px;
-  }
-
-  .aboutMe p {
-    text-align: center;
-    padding: 15px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 32px;
-    color: #42526e;
-    margin-left: 10%;
-    margin-right: 10%;
   }
 
   .languageList {
@@ -628,13 +635,6 @@ body {
     margin-bottom: 150px;
   }
 
-  .formResponsive p {
-    width: 100%;
-    line-height: 52px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
   .formResponsive .contactForm {
     width: 100%;
     justify-content: center;
@@ -653,6 +653,7 @@ body {
     display: none;
   }
 }
+
 /* For desktop */
 @media (min-width: 1024px) {
   .header h1,
@@ -698,6 +699,13 @@ body {
     margin-right: 10%;
   }
 
+  .formResponsive p {
+    width: 50%;
+    line-height: 52px;
+    padding-left: 135px;
+    padding-right: 25px;
+  }
+
   .headline .headline-detail p {
     margin-bottom: 0;
     padding-bottom: 8px;
@@ -732,10 +740,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 20px 10px; 
+    gap: 20px 10px;
   }
- 
- .flex-box {
+
+  .flex-box {
     display: inline-flex;
     margin-right: 1%;
     width: 28.33%;
@@ -767,7 +775,7 @@ body {
     grid-template-rows: auto;
     justify-content: center;
   }
- 
+
   .aboutContact {
     background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 80px right 0  no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 60px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 90px left 200px no-repeat;
     background-size: 120px;
@@ -778,13 +786,6 @@ body {
     flex-direction: row;
     padding-top: 65px;
     margin-bottom: 100px;
-  }
-
-  .formResponsive p {
-    width: 50%;
-    line-height: 52px;
-    padding-left: 135px;
-    padding-right: 25px;
   }
 
   .formResponsive .contactForm {
