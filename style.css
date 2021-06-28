@@ -7,13 +7,14 @@ body {
   display: flex;
   flex-direction: row;
   padding-top: 10px;
+  margin-top: 7px;
 }
 
 .header h1 {
   position: relative;
   color: black;
   font-size: 30px;
-  padding-left: 5px;
+  padding-left: 8px;
 }
 
 .nav-bar {
@@ -100,6 +101,7 @@ body {
   float: right;
   right: 13px;
   font-size: 25px;
+  padding-top: 3px;
 }
 
 .headline {
@@ -528,9 +530,9 @@ body {
 
 /* media quries */
 @media (max-width: 768px) {
-  .nav-bar .nav-bar-list {
+  /* .nav-bar .nav-bar-list {
     display: none;
-  }
+  } */
   .ham {
     position: fixed;
     z-index: 100;
@@ -544,7 +546,7 @@ body {
     display: none;
   }
   
-  .menu {
+  .nav-bar-list {
     position: fixed;
     top: 0;
     left: 0;
@@ -565,7 +567,7 @@ body {
     transform: translateY(0);
   }
   
-  .menu li {
+  .nav-bar-list li {
     padding: 1rem 0;
   }
   
