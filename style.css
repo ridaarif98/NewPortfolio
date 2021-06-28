@@ -46,6 +46,54 @@ body {
   color: #344563;
 }
 
+.ham {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  border: none;
+}
+
+.ham .xIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  background-color: white;
+  z-index: 1;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  list-style: none;
+  padding: 20px;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.menu li {
+  padding: 1rem 0;
+}
+
+.menuLink {
+  display: inline;
+  font-size: 26px;
+  color: white;
+  text-decoration: none;
+}
+
+.menuLink:hover {
+  text-decoration: blueviolet;
+}
+
 .nav-bar i {
   position: absolute;
   float: right;
