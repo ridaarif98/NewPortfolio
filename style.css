@@ -492,12 +492,12 @@ body {
     width: 3rem;
     border: none;
   }
-  
+
   .ham .xIcon {
     display: none;
     color: #67798e;
   }
-  
+
   .nav-bar-list {
     position: fixed;
     display: flex;
@@ -517,26 +517,25 @@ body {
     list-style: none;
     padding: 20px;
   }
-  
+
   .showMenu {
     transform: translateY(0);
   }
-  
+
   .nav-bar-list li {
     padding: 1rem 0;
   }
-  
+
   .menuLink {
     display: inline;
     font-size: 26px;
     color: black;
     text-decoration: none;
   }
-  
+
   .menuLink:hover {
     text-decoration: blueviolet;
   }
-  
 
   .flex-box {
     flex-direction: column;
@@ -739,7 +738,7 @@ body {
   .menu {
     display: none;
   }
- 
+
   .headline {
     background-image: url(./Images/Header-llustration-desktop@2x.png);
     background-repeat: no-repeat;
