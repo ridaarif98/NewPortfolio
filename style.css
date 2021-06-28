@@ -548,6 +548,8 @@ body {
   
   .nav-bar-list {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
     right: 0;
