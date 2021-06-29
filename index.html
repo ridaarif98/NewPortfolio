@@ -69,8 +69,8 @@
 <section class="Work"> 
   <h1>My Recent Works</h1>
   <hr>
-  <ul class="grid-items">
-    <li class="flex-box">
+  <ul class="grid-items" id="dynamicWork"> 
+    <!-- <li class="flex-box">
       <ul class="firstList">
         <li><img src="./Images/SecondPortfolio.svg" alt="My-Work"></li>
         <li><h1>Multi-Post Stories Gain+Glory</h1></li>
@@ -172,9 +172,41 @@
   <ul class="See-btn">
     <li><button type="button" class="see-project">See Project</button></li>
   </ul>
-</li>
+</li> -->
 </ul>
 </section>
+
+<section class="mobilePopup" id="firstPopup">
+  <!-- <ul>
+  <li class="flex-box1">
+    <ul class="firstListPop">
+      <li><i class="cls fa fa-close" id="firstClose"></i></li>
+      <li><img src="./Images/SecondPortfolio.svg" alt="My-Work"></li>
+      <li><h1>Keeping track of hundreds of
+        components</h1></li>
+    </ul>
+    <div class="list-boxPop">
+    <ul>
+    <li>Ruby on rails</li>
+    <li>css</li>
+    <li>JavaScript</li>
+    </ul>
+    </div>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type
+      and scrambled it 1960s with the releaLorem Ipsum is simply dummy text
+      of the printing and typesetting industry. Lorem Ipsum has been the
+      industry's standard dummy text ever since the 1500s,
+     when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+  <ul class="See-btn1">
+    <li><button type="button" class="see-project">See Live<i class="fa fa-external-link" aria-hidden="true"></i></button></li>
+    <li><button type="button" class="see-project">See Source<i class="fa fa-github" aria-hidden="true"></i></button></li>
+  </ul>
+</li>
+</ul> -->
+</section>
+
 <section class="aboutMe" id="AboutME">
   <h1>About me</h1>          
   <p>I can help you build product , feature or website
@@ -183,7 +215,7 @@
     to contact me.
   </p>
   <div class="See-btn">     
-    <button type="button" class="see-Resume">Get My Resume</button>
+    <button type="button" class="see-Resume" id="myResume">Get My Resume</button>
   </div>
 </section>
 <section class="languages">
@@ -260,5 +292,6 @@
    <hr class="footerHr">
 </footer>
 <script src="./script.js"></script>
+<script src="./script/workScript.js"></script>
 </body>
 </html>
