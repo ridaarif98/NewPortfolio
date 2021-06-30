@@ -46,7 +46,7 @@ const workData = [
 ];
 
 function languages(languages) {
-  return `${languages.map(function listDisplay(language) {
+  return `${languages.map((language)=> {
     return `<li>${language}</li>`;
   }).join('')}`;
 }
