@@ -20,14 +20,14 @@ const workData = [
     name: 'Multi-Post Stories Gain+Glory',
     photo: './Images/SecondPortfolio.svg',
     languages_list: ['Ruby on rails', 'CSS', 'Javascript', 'Html'],
-    btn_text:'See Project',
+    btn_text: 'See Project',
   },
   {
     id: 4,
     name: 'Multi-Post Stories Gain+Glory',
     photo: './Images/SecondPortfolio.svg',
     languages_list: ['Ruby on rails', 'CSS', 'Javascript', 'Html'],
-    btn_text:'See Project',
+    btn_text: 'See Project',
   },
   {
     id: 5,
@@ -41,14 +41,14 @@ const workData = [
     name: 'Multi-Post Stories Gain+Glory',
     photo: './Images/SecondPortfolio.svg',
     languages_list: ['Ruby on rails', 'CSS', 'Javascript', 'Html'],
-    btn_text:'See Project',
-  },   
+    btn_text: 'See Project',
+  },
 ];
 
+const btn = [];
+
 function languages(languages) {
-  return `${languages.map((language)=> {
-    return `<li>${language}</li>`;
-  }).join('')}`;
+  return `${languages.map((language) => {return `<li>${language}</li>`;}).join('')}`;
 }
 
 function workTemplate(work) {
@@ -73,7 +73,7 @@ function workTemplate(work) {
 
 document.getElementById('dynamicWork').innerHTML = `${workData.map(workTemplate).join('')}`;
 
-//Work Popup
+// Work Popup
 
 const workPopUp = [
   {
@@ -88,35 +88,32 @@ const workPopUp = [
     secondBtn: 'See Source',
     liveLink: 'https://ridaarif98.github.io/NewPortfolio/',
     sourceLink: 'https://github.com/ridaarif98/NewPortfolio',
-  }
+  },
 ];
 
 function languagesPopup(languages) {
-  return `${languages.map(function(language){
+  return `${languages.map(function(language) {
     return `<li>${language}</li>`
     }).join('')}`
-}
+};
 
+function languagesPopupDesktop(languages) {
+  return `${languages.map(function(language) {
+    return `<li>${language}</li>`
+  }).join('')}`;
+};
 
-function languagesPopupDesktop(languages){
-    return `${languages.map(function(language){
-        return `<li>${language}</li>`
-    }).join('')}`
-}
-
-
-function workPopup(works){
-    return `
+function workPopup(works) {
+  return `
     <ul>
   <li class="flex-box1">
-  
     <ul class="firstListPop">
-      <li> <span class="cl-tag fa fa-close" id="firstClose"></span><img src=${works.photo} alt="My-Work" id="closeTab"></li>
-      <li><h1>${works.heading}</h1></li>
+    <li> <span class="cl-tag fa fa-close" id="firstClose"></span><img src=${works.photo} alt="My-Work" id="closeTab"></li>
+    <li><h1>${works.heading}</h1></li>
     </ul>
     <div class="list-boxPop">
     <ul>
-    ${(window.innerWidth<768) ? languagesPopup(works.languages_list): languagesPopupDesktop(works.desktoplist)}
+    ${(window.innerWidth < 768) ? languagesPopup(works.languages_list) : languagesPopupDesktop(works.desktoplist)}
     </ul>
     </div>
     <p>${works.description}</p>
@@ -125,27 +122,24 @@ function workPopup(works){
     <li><a href=${works.sourceLink}><button type="button" class="see-project">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
   </ul>
 </li>
-</ul>`
+</ul>`;
 }
 
-document.getElementById('firstPopup').innerHTML =`${workPopUp.map(workPopup).join('')}`
+document.getElementById('firstPopup').innerHTML = `${workPopUp.map(workPopup).join('')}`;
 
-
-var modal = document.getElementById("firstPopup");
+const modal = document.getElementById("firstPopup");
 
 // Get the button that opens the modal
-var btn=[];
-for(let i=0 ; i<=5 ; i++){
-   btn[i]  = document.getElementsByClassName("see-project")[i];
+for (let i = 0 ; i <= 5; i++) {
+  btn[i]= document.getElementsByClassName('see-project')[i];
 }
 
-
 // Get the <span> element that closes the modal
-var span = document.getElementById("firstClose");
+const span = document.getElementById("firstClose");
 
-// When the user clicks the button, open the modal 
-for(let i=0 ; i<=5 ;i++){
-btn[i].onclick = function() {
+// When the user clicks the button, open the modal
+for (let i = 0; i <= 5; i++) {
+  btn[i].onclick = function() {
   modal.style.display = "block";
 }}
 
