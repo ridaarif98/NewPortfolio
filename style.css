@@ -298,21 +298,20 @@ body {
 .mobilePopup {
   display: none;
   height: 100%;
-  /* width: 100%; */
   position: fixed;
   left: 0;
   top: 0;
-  right:0;
+  right: 0;
   bottom: 0;
   overflow: auto;
   z-index: 1;
   background: #c1c7d0;
 }
 
- .mobilePopup .popupList {
-   list-style-type: none;
-   left: 0;
- }
+.mobilePopup .popupList {
+  list-style-type: none;
+  left: 0;
+}
 
 .mobilePopup span {
   position: absolute;
@@ -623,7 +622,6 @@ body {
 
 /* media quries */
 @media (max-width: 768px) {
-
   .ham {
     position: fixed;
     z-index: 100;
