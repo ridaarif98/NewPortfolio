@@ -69,112 +69,13 @@
 <section class="Work"> 
   <h1>My Recent Works</h1>
   <hr>
-  <ul class="grid-items">
-    <li class="flex-box">
-      <ul class="firstList">
-        <li><img src="./Images/SecondPortfolio.svg" alt="My-Work"></li>
-        <li><h1>Multi-Post Stories Gain+Glory</h1></li>
-      </ul>
-    
-    <div class="list-box">
-    <ul>
-    <li class="ruby">Ruby on rails</li>
-    <li class="css">css</li>
-    <li class="java">JavaScript</li>
-    <li class="html">Html</li>
-    </ul>
-    </div>
-    <ul class="See-btn">
-      <li><button type="button" class="see-project">See Project</button></li>
-    </ul>
-  </li>
-    <li class="flex-box">
-      <ul class="firstList">
-        <li><img src="./Images/SecondPortfolio.svg" alt="My-Work"></li>
-        <li><h1>Multi-Post Stories Gain+Glory</h1></li>
-      </ul>
-    <div class="list-box">
-    <ul>
-    <li>Ruby on rails</li>
-    <li>css</li>
-    <li>JavaScript</li>
-    <li>Html</li>
-    </ul>
-    </div>  
-    <ul class="See-btn">
-      <li><button type="button" class="see-project">See Project</button></li>
-    </ul>
-  </li>
-    <li class="flex-box">
-      <ul class="firstList">
-        <li><img src="./Images/SecondPortfolio.svg" alt="My-Work"></li>
-        <li><h1>Multi-Post Stories Gain+Glory</h1></li>
-      </ul>
-      <div class="list-box">
-      <ul>
-      <li>Ruby on rails</li>
-      <li>css</li>
-      <li>JavaScript</li>
-      <li>Html</li>
-      </ul>
-      </div>              
-      <ul class="See-btn">
-        <li><button type="button" class="see-project">See Project</button></li>
-      </ul>
-    </li>
-    <li class="flex-box">
-      <ul class="firstList">
-        <li><img src="./Images/SecondPortfolio.svg" alt="My-Work"></li>
-        <li><h1>Multi-Post Stories Gain+Glory</h1></li>
-      </ul>
-    <div class="list-box">
-      <ul>
-      <li>Ruby on rails</li>
-      <li>css</li>
-      <li>JavaScript</li>
-      <li>Html</li>
-      </ul>
-    </div> 
-    <ul class="See-btn">
-      <li><button type="button" class="see-project">See Project</button></li>
-    </ul>
-  </li>
-    <li class="flex-box">
-      <ul class="firstList">
-        <li><img src="./Images/SecondPortfolio.svg" alt="My-Work"></li>
-        <li><h1>Multi-Post Stories Gain+Glory</h1></li>
-      </ul>
-    <div class="list-box">
-      <ul>
-      <li>Ruby on rails</li>
-      <li>css</li>
-      <li>JavaScript</li>
-      <li>Html</li>
-     </ul>
-    </div>
-    <ul class="See-btn">
-      <li><button type="button" class="see-project">See Project</button></li>
-    </ul>
-  </li>
-  <li class="flex-box">
-    <ul class="firstList">
-      <li><img src="./Images/SecondPortfolio.svg" alt="My-Work"></li>
-      <li><h1>Multi-Post Stories Gain+Glory</h1></li>
-    </ul>
-  <div class="list-box">
-  <ul>
-  <li>Ruby on rails</li>
-  <li>css</li>
-  <li>JavaScript</li>
-  <li>Html</li>
-  </ul>
-  </div>
-  <ul class="See-btn">
-    <li><button type="button" class="see-project">See Project</button></li>
-  </ul>
-</li>
+  <ul class="grid-items" id="dynamicWork"> 
 </ul>
 </section>
+
+<section class="mobilePopup" id="firstPopup">
+</section>
+
 <section class="aboutMe" id="AboutME">
   <h1>About me</h1>          
   <p>I can help you build product , feature or website
@@ -183,7 +84,7 @@
     to contact me.
   </p>
   <div class="See-btn">     
-    <button type="button" class="see-Resume">Get My Resume</button>
+    <button type="button" class="see-Resume" id="myResume">Get My Resume</button>
   </div>
 </section>
 <section class="languages">
@@ -259,6 +160,7 @@
    <div class="email-link"><p>ridaarif16@gmail.com </p></div>
    <hr class="footerHr">
 </footer>
-<script src="./script.js"></script>
+<script src="./script/script.js"></script>
+<script src="./script/workScript.js"></script>
 </body>
 </html>
