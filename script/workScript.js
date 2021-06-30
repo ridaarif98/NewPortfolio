@@ -92,7 +92,7 @@ const workPopUp = [
 ];
 
 function languagesPopup(languages) {
-  return `${languages.map((language) => `<li>${language}</li>`}).join('')}`;
+  return `${languages.map((language) => `<li>${language}</li>`).join('')}`;
 }
 
 function languagesPopupDesktop(languages) {
