@@ -48,7 +48,7 @@ const workData = [
 const btn = [];
 
 function languages(languages) {
-  return `${languages.map((language) => {return `<li>${language}</li>`;}).join('')}`;
+  return `${ languages.map((language) =>{return `<li>${language}</li>`;}).join('') } `;
 }
 
 function workTemplate(work) {
@@ -92,16 +92,16 @@ const workPopUp = [
 ];
 
 function languagesPopup(languages) {
-  return `${languages.map(function(language) {
-    return `<li>${language}</li>`
-    }).join('')}`
-};
+  return `${languages.map( (language) => {
+    return `<li>${language}</li>`;
+    }).join('')}`;
+}
 
 function languagesPopupDesktop(languages) {
-  return `${languages.map(function(language) {
-    return `<li>${language}</li>`
+  return `${languages.map ((language) => {
+    return `<li>${language}</li>`;
   }).join('')}`;
-};
+}
 
 function workPopup(works) {
   return `
@@ -127,30 +127,30 @@ function workPopup(works) {
 
 document.getElementById('firstPopup').innerHTML = `${workPopUp.map(workPopup).join('')}`;
 
-const modal = document.getElementById("firstPopup");
+const modal = document.getElementById('firstPopup');
 
 // Get the button that opens the modal
-for (let i = 0 ; i <= 5; i++) {
+for (let i = 0 ; i <= 5; i = i+1) {
   btn[i]= document.getElementsByClassName('see-project')[i];
 }
 
 // Get the <span> element that closes the modal
-const span = document.getElementById("firstClose");
+const span = document.getElementById('firstClose');
 
 // When the user clicks the button, open the modal
-for (let i = 0; i <= 5; i++) {
-  btn[i].onclick = function() {
+for (let i = 0; i <= 5; i= i+1) {
+  btn[i].onclick = () => {
   modal.style.display = "block";
 }}
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+span.onclick = () => {
+  modal.style.display = 'none';
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+window.onclick = (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
   }
-}
+};
