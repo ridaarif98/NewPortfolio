@@ -80,15 +80,26 @@ const workPopUp = [
     {
         id : 1,
         photo : './Images/SecondPortfolio.svg',
-        languages_list : ['Ruby on rails','CSS','Javascript','Html'],
+        languages_list : ['Ruby on rails','CSS','Javascript'],
+        desktoplist:['Codekit','Github','Javascript','Bootstrap','Terminal'],
         btn_text :'See Project',
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been theindustry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the relea",
         heading:'Keeping track of hundreds of components',
         firstBtn:'See Live',
-        secondBtn : 'See Source'
+        secondBtn : 'See Source',
+        liveLink: 'https://ridaarif98.github.io/NewPortfolio/',
+        sourceLink: 'https://github.com/ridaarif98/NewPortfolio'
     }
 ]
+
 function languagesPopup(languages){
+    return `${languages.map(function(language){
+        return `<li>${language}</li>`
+    }).join('')}`
+}
+
+
+function languagesPopupDesktop(languages){
     return `${languages.map(function(language){
         return `<li>${language}</li>`
     }).join('')}`
@@ -99,20 +110,20 @@ function workPopup(works){
     return `
     <ul>
   <li class="flex-box1">
+  
     <ul class="firstListPop">
-      <li><i class="cls fa fa-close" id="firstClose"></i></li>
-      <li><img src=${works.photo} alt="My-Work"></li>
+      <li> <span class="cl-tag fa fa-close" id="firstClose"></span><img src=${works.photo} alt="My-Work" id="closeTab"></li>
       <li><h1>${works.heading}</h1></li>
     </ul>
     <div class="list-boxPop">
     <ul>
-    ${languagesPopup(works.languages_list)}
+    ${(window.innerWidth<768) ? languagesPopup(works.languages_list): languagesPopupDesktop(works.desktoplist)}
     </ul>
     </div>
     <p>${works.description}</p>
   <ul class="See-btn1">
-    <li><button type="button" class="see-project">${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></li>
-    <li><button type="button" class="see-project">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></li>
+    <li><a href=${works.liveLink}><button type="button" class="see-project">${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></a></li>
+    <li><a href=${works.sourceLink}><button type="button" class="see-project">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
   </ul>
 </li>
 </ul>`

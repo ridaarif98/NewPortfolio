@@ -298,12 +298,22 @@ body {
   display: none;
   height: 100%;
   width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+   overflow: auto; 
   z-index: 1;
+  background: #c1c7d0;
 }
-
+.mobilePopup span {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  font-size: 24px;
+  color: white;
+}
 .flex-box1 {
   display: flex;
-  width: 100%;
   left: 0;
   flex-direction: column;
   background-color: white;
@@ -318,12 +328,17 @@ body {
   padding: 0;
   list-style: none;
 }
+/* 
+.list-boxPop ul li:nth-child(4), li:nth-child(5),li:nth-child(6),li:nth-child(7) {
+  display: none;
+}  */
 
 .flex-box1 img {
+  position: relative;
   width: 100%;
   border-radius: 3%;
   padding: 10px;
-  height: 50%;
+  height: 30%;
 }
 
 .flex-box1 h1 {
@@ -342,10 +357,11 @@ body {
   margin-right: 5px;
 }
 
-.list-boxPop .cls {
+.list-boxPop i {
   position: absolute;
-  right: -10px;
-  top: -10px;
+  color: white;
+  right: 0;
+  top: 0;
 }
 
 .list-boxPop ul {
@@ -384,15 +400,17 @@ body {
 }
 
 .See-btn1 {
+  width: 100%;
   list-style-type: none;
   padding: 8px;
   display: flex;
   justify-content: left;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
 }
 
 .See-btn1 .see-project {
-  margin-right: 20px;
+  margin-right: 5px;
   display: flex;
   padding: 10px 12px;
   align-self: center;
@@ -884,6 +902,15 @@ body {
     font-size: 20px;
   }
 
+  .See-btn1 {
+    position: absolute;
+    margin-left:60%;
+    margin-top: 64%;
+  }
+  
+  .See-btn1 .see-project {
+    margin-right: 12px;
+  }
   .aboutMe p {
     text-align: center;
     padding: 15px;
