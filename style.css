@@ -332,7 +332,7 @@ body {
   list-style: none;
 }
 
-/* 
+/*
 .list-boxPop ul li:nth-child(4), li:nth-child(5),li:nth-child(6),li:nth-child(7) {
   display: none;
 }  */
@@ -836,8 +836,7 @@ body {
   }
 
   .aboutContact {
-    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 70px right 0 no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 50px left 0 no-repeat,
-      url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 80px left 200px no-repeat;
+    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 70px right 0 no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 50px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 80px left 200px no-repeat;
     background-size: 120px;
   }
 
@@ -917,6 +916,7 @@ body {
   .See-btn1 .see-project {
     margin-right: 12px;
   }
+
   .aboutMe p {
     text-align: center;
     padding: 15px;
@@ -991,8 +991,7 @@ body {
   }
 
   .aboutMe {
-    background: url(./Images/aboutFirst.svg) top right no-repeat,
-      url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
+    background: url(./Images/aboutFirst.svg) top right no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
     background-size: 170px;
     padding: 10px;
     margin-top: 30px;
@@ -1008,12 +1007,7 @@ body {
   }
 
   .aboutContact {
-    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 80px
-        right 0 no-repeat,
-      url(./Images/illustration-1-contact-form-desktop.svg) bottom 60px left 0
-        no-repeat,
-      url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 90px left
-        200px no-repeat;
+    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 80px right 0 no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 60px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 90px left 200px no-repeat;
     background-size: 120px;
   }
 
