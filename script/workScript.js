@@ -135,7 +135,7 @@ const span = document.getElementById('firstClose');
 
 // When the user clicks the button, open the modal
 for (let i = 0; i <= 5; i += 1) {
-  btn[i].onclick = () => { modal.style.display = 'block';};
+  btn[i].onclick = () => { modal.style.display = 'block'; };
 }
 
 // When the user clicks on <span> (x), close the modal
