@@ -298,19 +298,26 @@ body {
 .mobilePopup {
   display: none;
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   position: fixed;
   left: 0;
   top: 0;
+  right:0;
+  bottom: 0;
   overflow: auto;
   z-index: 1;
   background: #c1c7d0;
 }
 
+ .mobilePopup .popupList {
+   list-style-type: none;
+   left: 0;
+ }
+
 .mobilePopup span {
   position: absolute;
   top: 5px;
-  right: 12px;
+  right: 10px;
   font-size: 24px;
   color: white;
 }
@@ -331,11 +338,6 @@ body {
   padding: 0;
   list-style: none;
 }
-
-/*
-.list-boxPop ul li:nth-child(4), li:nth-child(5),li:nth-child(6),li:nth-child(7) {
-  display: none;
-}  */
 
 .flex-box1 img {
   position: relative;
@@ -370,8 +372,6 @@ body {
 
 .list-boxPop ul {
   padding: 10px 12px;
-
-  /* margin-left: 16px; */
   list-style-type: none;
   display: inline-flex;
   flex-direction: row;
@@ -623,9 +623,7 @@ body {
 
 /* media quries */
 @media (max-width: 768px) {
-  /* .nav-bar .nav-bar-list {
-    display: none;
-  } */
+
   .ham {
     position: fixed;
     z-index: 100;
@@ -907,10 +905,15 @@ body {
     font-size: 20px;
   }
 
+  .firstListPop h1 {
+    width: 50%;
+  }
+
   .See-btn1 {
+    width: 40%;
+    right: 0;
     position: absolute;
-    margin-left: 60%;
-    margin-top: 67.5%;
+    margin-top: 69%;
   }
 
   .See-btn1 .see-project {

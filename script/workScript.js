@@ -1,7 +1,7 @@
 const workData = [
   {
     id: 1,
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'Glam Fam',
     photo: './Images/SecondPortfolio.svg',
     languages_list: ['Ruby on rails', 'CSS', 'Javascript', 'Html'],
     btn_text: 'See Project',
@@ -10,37 +10,37 @@ const workData = [
   },
   {
     id: 2,
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'Multi-Post',
     photo: './Images/SecondPortfolio.svg',
-    languages_list: ['Ruby on rails', 'CSS', 'Javascript', 'Html'],
+    languages_list: ['Python', 'Javascript', 'CodeKit', 'Html'],
     btn_text: 'See Project',
   },
   {
     id: 3,
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'Stories',
     photo: './Images/SecondPortfolio.svg',
-    languages_list: ['Ruby on rails', 'CSS', 'Javascript', 'Html'],
+    languages_list: ['CSS', 'Javascript', 'Html'],
     btn_text: 'See Project',
   },
   {
     id: 4,
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'Gain+Glory',
     photo: './Images/SecondPortfolio.svg',
-    languages_list: ['Ruby on rails', 'CSS', 'Javascript', 'Html'],
+    languages_list: ['React', 'CSS', 'Html', 'Codekit'],
     btn_text: 'See Project',
   },
   {
     id: 5,
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'Capston',
     photo: './Images/SecondPortfolio.svg',
     languages_list: ['Ruby on rails', 'CSS', 'Javascript', 'Html'],
     btn_text: 'See Project',
   },
   {
     id: 6,
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'My Portfolio',
     photo: './Images/SecondPortfolio.svg',
-    languages_list: ['Ruby on rails', 'CSS', 'Javascript', 'Html'],
+    languages_list: ['Ruby on rails', 'CSS', 'Bootstrap', 'Html'],
     btn_text: 'See Project',
   },
 ];
@@ -101,7 +101,7 @@ function languagesPopupDesktop(languages) {
 
 function workPopup(works) {
   return `
-    <ul>
+    <ul class="popupList">
   <li class="flex-box1">
     <ul class="firstListPop">
     <li> <span class="cl-tag fa fa-close" id="firstClose"></span><img src=${works.photo} alt="My-Work" id="closeTab"></li>
@@ -109,7 +109,7 @@ function workPopup(works) {
     </ul>
     <div class="list-boxPop">
     <ul>
-    ${(window.innerWidth < 768) ? languagesPopup(works.languages_list) : languagesPopupDesktop(works.desktoplist)}
+     ${(window.innerWidth < 768) ? languagesPopup(works.languages_list) : languagesPopupDesktop(works.desktoplist)}
     </ul>
     </div>
     <p>${works.description}</p>
