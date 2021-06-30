@@ -293,6 +293,7 @@ body {
   background: #03492c;
   border: 3px solid rgb(201, 189, 189);
 }
+
 /* mobilePopup for flexBox */
 .mobilePopup {
   display: none;
@@ -305,6 +306,7 @@ body {
   z-index: 1;
   background: #c1c7d0;
 }
+
 .mobilePopup span {
   position: absolute;
   top: 5px;
@@ -312,6 +314,7 @@ body {
   font-size: 24px;
   color: white;
 }
+
 .flex-box1 {
   display: flex;
   left: 0;
@@ -328,6 +331,7 @@ body {
   padding: 0;
   list-style: none;
 }
+
 /* 
 .list-boxPop ul li:nth-child(4), li:nth-child(5),li:nth-child(6),li:nth-child(7) {
   display: none;
@@ -366,6 +370,7 @@ body {
 
 .list-boxPop ul {
   padding: 10px 12px;
+
   /* margin-left: 16px; */
   list-style-type: none;
   display: inline-flex;
@@ -679,8 +684,7 @@ body {
   }
 
   .aboutMe {
-    background: url(./Images/illustration1.svg) top right no-repeat,
-      url(./Images/illustration2.svg) bottom 25px left no-repeat;
+    background: url(./Images/illustration1.svg) top right no-repeat, url(./Images/illustration2.svg) bottom 25px left no-repeat;
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -810,8 +814,7 @@ body {
   }
 
   .aboutMe {
-    background: url(./Images/aboutFirst.svg) top right no-repeat,
-      url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
+    background: url(./Images/aboutFirst.svg) top right no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
     background-size: 150px;
     padding: 10px;
     margin-top: 30px;
@@ -833,12 +836,8 @@ body {
   }
 
   .aboutContact {
-    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 70px
-        right 0 no-repeat,
-      url(./Images/illustration-1-contact-form-desktop.svg) bottom 50px left 0
-        no-repeat,
-      url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 80px left
-        200px no-repeat;
+    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 70px right 0 no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 50px left 0 no-repeat,
+      url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 80px left 200px no-repeat;
     background-size: 120px;
   }
 
