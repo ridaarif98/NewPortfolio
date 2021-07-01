@@ -7,10 +7,10 @@ const isEmailValid = (email) => {
 };
 
 const isRequired = function requireTest(value) {
-  if (value ==='') {
+  if (value === '') {
     return false;
   }
-    return true;
+  return true;
 };
 
 const showSuccess = (input) => {
