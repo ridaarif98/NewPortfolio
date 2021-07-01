@@ -6,7 +6,7 @@ const isEmailValid = (email) => {
   return re.test(email);
 };
 
-const isRequired = (value) => value === '' ? false : true;
+const isRequired = (value) => (value === '' ? false : true);
 
 const showSuccess = (input) => {
   // get the form-field element
