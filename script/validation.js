@@ -1,23 +1,5 @@
-const usernameEl = document.querySelector('#username');
 const emailEl = document.querySelector('#email');
 const form = document.querySelector('#contact');
-
-const checkEmail = () => {
-  let valid = false;
-  const email = emailEl.value.trim();
-  if (!isRequired(email)) {
-      showError(emailEl, 'Email cannot be blank.');
-  } else if (!isEmailValid(email)) {
-      showError(emailEl, 'Email is not valid.');
-      
-  emailEl.classList.add('invalidTest');
-  } else {
-      showSuccess(emailEl);
-      valid = true;
-  }
-  return valid;
-};
-
 
 const isEmailValid = (email) => {
   const re = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
@@ -25,6 +7,22 @@ const isEmailValid = (email) => {
 };
 
 const isRequired = value => value === '' ? false : true;
+
+const checkEmail = () => {
+  let valid = false;
+  const email = emailEl.value.trim();
+  if (!isRequired(email)) {
+    showError(emailEl, 'Email cannot be blank.');
+  } else if (!isEmailValid(email)) {
+    showError(emailEl, 'Email is not valid.');
+      
+  emailEl.classList.add('invalidTest');
+  } else {
+    showSuccess(emailEl);
+    valid = true;
+  }
+  return valid;
+};
 
 const showError = (input, message) => {
   // get the form-field element
@@ -51,13 +49,11 @@ const showSuccess = (input) => {
   error.textContent = '';
 }
 
-form.addEventListener('submit', function (e) {
- 
+form.addEventListener('submit', function test(e) {
  // validate fields
-  let isEmailValid = checkEmail();
-  let isFormValid = isEmailValid && isUsernameValid; 
+  const isEmailValid = checkEmail();
+  const isFormValid = isEmailValid; 
   if (!isFormValid) {
     e.preventDefault();
   }
 });
-
