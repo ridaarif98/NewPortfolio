@@ -574,6 +574,10 @@ body {
   line-height: 24px;
 }
 
+.contactForm small {
+  color: red;
+}
+
 .contactForm textarea {
   width: 85%;
   height: 105px;
