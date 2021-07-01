@@ -8,6 +8,31 @@ const isEmailValid = (email) => {
 
 const isRequired = value => value === '' ? false : true;
 
+const showSuccess = (input) => {
+  // get the form-field element
+  const formField = input.parentElement;
+
+  // remove the error class
+  formField.classList.remove('error');
+  formField.classList.add('success');
+
+  // hide the error message
+  const error = formField.querySelector('small');
+  error.textContent = '';
+};
+
+const showError = (input, message) => {
+  // get the form-field element
+  const formField = input.parentElement;
+  // add the error class
+  formField.classList.remove('success');
+  formField.classList.add('error');
+  // show the error message
+  const error = formField.querySelector('small');
+  error.textContent = message;
+  // document.getElementById('email').focus();
+};
+
 const checkEmail = () => {
   let valid = false;
   const email = emailEl.value.trim();
@@ -24,35 +49,10 @@ const checkEmail = () => {
   return valid;
 };
 
-const showError = (input, message) => {
-  // get the form-field element
-  const formField = input.parentElement;
-  // add the error class
-  formField.classList.remove('success');
-  formField.classList.add('error');
-  // show the error message
-  const error = formField.querySelector('small');
-  error.textContent = message;
-  // document.getElementById('email').focus();
-};
-
-const showSuccess = (input) => {
-  // get the form-field element
-  const formField = input.parentElement;
-
-  // remove the error class
-  formField.classList.remove('error');
-  formField.classList.add('success');
-
-  // hide the error message
-  const error = formField.querySelector('small');
-  error.textContent = '';
-}
-
 form.addEventListener('submit', function test(e) {
- // validate fields
+  // validate fields
   const isEmailValid = checkEmail();
-  const isFormValid = isEmailValid; 
+  const isFormValid = isEmailValid;
   if (!isFormValid) {
     e.preventDefault();
   }
