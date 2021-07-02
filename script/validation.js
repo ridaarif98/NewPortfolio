@@ -75,7 +75,7 @@ window.onload = () => {
   const data = JSON.parse(dataGet);
   if (data) {
     nameEI.value = data.userName;
-    emailEl.value= data.emailUser;
+    emailEl.value = data.emailUser;
     message.value = data.userMessage;
   }
 };
