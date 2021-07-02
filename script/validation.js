@@ -1,6 +1,6 @@
 const emailEl = document.querySelector('#email');
-const nameEI= document.querySelector('#username');
-const message= document.querySelector('#msg');
+const nameEI = document.querySelector('#username');
+const message = document.querySelector('#msg');
 const form = document.querySelector('#contact');
 
 const isEmailValid = (email) => {
@@ -54,15 +54,15 @@ const checkEmail = () => {
   }
   return valid;
 };
-const userData= {
+const userData = {
 };
- 
+
 form.addEventListener('submit', (e) => {
   // validate fields
-  userData.emailUser = emailEl.value ;
+  userData.emailUser = emailEl.value;
   userData.userName = nameEI.value;
   userData.userMessage = message.value;
-  localStorage.setItem('userData',JSON.stringify(userData));
+  localStorage.setItem('userData', JSON.stringify(userData));
   const isEmailValid = checkEmail();
   const isFormValid = isEmailValid;
   if (!isFormValid) {
@@ -71,11 +71,11 @@ form.addEventListener('submit', (e) => {
 });
 
 window.onload = () => {
-  const dataGet= localStorage.getItem('userData');
+  const dataGet = localStorage.getItem('userData');
   const data = JSON.parse(dataGet);
-  if(data){
-  nameEI.value = data.userName;
-  emailEl.value= data.emailUser;
-  message.value = data.userMessage;
-}
-}
+  if (data) {
+    nameEI.value = data.userName;
+    emailEl.value= data.emailUser;
+    message.value = data.userMessage;
+  }
+};
