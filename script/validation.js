@@ -65,7 +65,7 @@ form.addEventListener('submit', (e) => {
   localStorage.setItem('userData', JSON.stringify(userData));
   const isEmailValid = checkEmail();
   const isFormValid = isEmailValid;
-  if (!isFormValid) {
+  if (isFormValid) {
     e.preventDefault();
   }
 });
@@ -74,8 +74,8 @@ window.onload = () => {
   const dataGet = localStorage.getItem('userData');
   const data = JSON.parse(dataGet);
   if (data) {
-    nameEI.value = data.userName;
+    nameEI.value = data.userNamee;
     emailEl.value = data.emailUser;
-    message.value = data.userMessage;
+    message.value = data.userMessagee;
   }
 };
