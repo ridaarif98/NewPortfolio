@@ -1,4 +1,6 @@
 const emailEl = document.querySelector('#email');
+const nameEI= document.querySelector('#username');
+const message= document.querySelector('#msg');
 const form = document.querySelector('#contact');
 
 const isEmailValid = (email) => {
@@ -35,7 +37,6 @@ const showError = (input, message) => {
   // show the error message
   const error = formField.querySelector('small');
   error.textContent = message;
-  // document.getElementById('email').focus();
 };
 
 const checkEmail = () => {
@@ -53,12 +54,28 @@ const checkEmail = () => {
   }
   return valid;
 };
-
+const userData= {
+};
+ 
 form.addEventListener('submit', (e) => {
   // validate fields
+  userData.emailUser = emailEl.value ;
+  userData.userName = nameEI.value;
+  userData.userMessage = message.value;
+  localStorage.setItem('userData',JSON.stringify(userData));
   const isEmailValid = checkEmail();
   const isFormValid = isEmailValid;
   if (!isFormValid) {
     e.preventDefault();
   }
 });
+
+window.onload = () => {
+  const dataGet= localStorage.getItem('userData');
+  const data = JSON.parse(dataGet);
+  if(data){
+  nameEI.value = data.userName;
+  emailEl.value= data.emailUser;
+  message.value = data.userMessage;
+}
+}
