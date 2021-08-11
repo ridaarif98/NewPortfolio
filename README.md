@@ -1,14 +1,17 @@
 # MyPortfolio
-#This is MyPortfolio Project
-   This is a mobile-first portfolio project built using Semantic HTML and CSS. It includes the navigation bar, the headline, a list of past projects(which includes skills, languages and frameworks used), the about section and a contact form.
-    Also add github Pages to make my Portfolio online available.
+# This is MyPortfolio Project
+
+   This is a mobile-first portfolio project built using Semantic HTML, CSS and JavaScript. It includes the navigation bar, the headline, a list of past projects(which includes skills, languages and frameworks used), the about section and a contact form.
+   Also add github Pages to make my Portfolio online available.
+
+
   
 
   ![screenshot](./Images/newPort.png)
   
   ## Built With
 
-- Html,CSS
+- Html,CSS, Javascript
 - Git, Github
 - Visual Studio Code
 
@@ -20,7 +23,7 @@
 
 ## Getting Started
 
-**This is an example of how you may create your mobile responsive porfolio**
+**This is an example of how you may create your mobile and desktop responsive porfolio**
 
 ## Prerequisites
 
@@ -46,3 +49,16 @@
 ## Acknowledgments
 
 - Figma : [Figma Template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A468)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/ridaarif98/NewPortfolio/issues).
+
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
