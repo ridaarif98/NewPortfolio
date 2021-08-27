@@ -1,9 +1,9 @@
 const workData = [
   {
     id: 1,
-    name: 'Glam Fam',
+    name: 'Capstone',
     photo: './Images/SecondPortfolio.svg',
-    languages_list: ['Ruby on rails', 'CSS', 'Javascript', 'Html'],
+    languages_list: ['CSS', 'Javascript', 'Html'],
     btn_text: 'See Project',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been theindustry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     heading: 'Keeping track of hundreds of components',
@@ -64,7 +64,7 @@ function workTemplate(work) {
  ${languages(work.languages_list)}
  </ul>
  </div>
-  <ul class="See-btn">
+  <ul class="See-btn" id="seeBtn-List">
     <li><button type="button" class="see-project" id=${work.id}>${work.btn_text}</button></li>
   </ul>
 </li>
@@ -88,6 +88,19 @@ const workPopUp = [
     secondBtn: 'See Source',
     liveLink: 'https://ridaarif98.github.io/NewPortfolio/',
     sourceLink: 'https://github.com/ridaarif98/NewPortfolio',
+  },
+  {
+    id: 2,
+    photo: './Images/SecondPortfolio.svg',
+    languages_list: ['HTML', 'CSS', 'JavaScript'],
+    desktoplist: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal'],
+    btn_text: 'See Project',
+    description: "Capstone is conference website for 'Women Summit' which is build using HTML, CSS, and JavaScript. It is desktop and mobile responsive. In mobile version it has pop-up menu",
+    heading: 'Women Summit Conference',
+    firstBtn: 'See Live',
+    secondBtn: 'See Source',
+    liveLink: 'https://ridaarif98.github.io/capston/',
+    sourceLink: 'https://github.com/ridaarif98/capston',
   },
 ];
 
@@ -121,29 +134,74 @@ function workPopup(works) {
 </ul>`;
 }
 
-document.getElementById('firstPopup').innerHTML = `${workPopUp.map(workPopup).join('')}`;
-
 const modal = document.getElementById('firstPopup');
 
-// Get the button that opens the modal
-for (let i = 0; i <= 5; i += 1) {
-  btn[i] = document.getElementsByClassName('see-project')[i];
-}
+if(document.getElementById('1')) {
+  document.getElementById('1').onclick  = () => {  
+     modal.innerHTML = workPopup(workPopUp[1]);
+     modal.style.display = 'block';
+     const span = document.getElementById('firstClose');
+    span.addEventListener ('click', () => {
+    modal.style.display = 'none';
+    });
+  };
+} 
 
-// Get the <span> element that closes the modal
-const span = document.getElementById('firstClose');
+if(document.getElementById('2')) {
+  document.getElementById('2').onclick  = () => {  
+     modal.innerHTML = workPopup(workPopUp[0]);
+     modal.style.display = 'block';
+     const span = document.getElementById('firstClose');
+    span.addEventListener ('click', () => {
+    modal.style.display = 'none';
+    });
+  };
+} 
 
-// When the user clicks the button, open the modal
-for (let i = 0; i <= 5; i += 1) {
-  btn[i].onclick = () => { modal.style.display = 'block'; };
-}
+if(document.getElementById('3')) {
+  document.getElementById('3').onclick  = () => {  
+     modal.innerHTML = workPopup(workPopUp[0]);
+     modal.style.display = 'block';
+     const span = document.getElementById('firstClose');
+    span.addEventListener ('click', () => {
+    modal.style.display = 'none';
+    });
+  };
+} 
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = () => {
-  modal.style.display = 'none';
-};
+if(document.getElementById('4')) {
+  document.getElementById('4').onclick  = () => {  
+     modal.innerHTML = workPopup(workPopUp[0]);
+     modal.style.display = 'block';
+     const span = document.getElementById('firstClose');
+    span.addEventListener ('click', () => {
+    modal.style.display = 'none';
+    });
+  };
+} 
 
-// When the user clicks anywhere outside of the modal, close it
+if(document.getElementById('5')) {
+  document.getElementById('5').onclick  = () => {  
+     modal.innerHTML = workPopup(workPopUp[0]);
+     modal.style.display = 'block';
+     const span = document.getElementById('firstClose');
+    span.addEventListener ('click', () => {
+    modal.style.display = 'none';
+    });
+  };
+} 
+
+if(document.getElementById('6')) {
+  document.getElementById('6').onclick  = () => {  
+     modal.innerHTML = workPopup(workPopUp[0]);
+     modal.style.display = 'block';
+     const span = document.getElementById('firstClose');
+    span.addEventListener ('click', () => {
+    modal.style.display = 'none';
+    });
+  };
+} 
+
 window.onclick = (event) => {
   if (event.target === modal) {
     modal.style.display = 'none';

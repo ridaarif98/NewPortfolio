@@ -311,6 +311,7 @@ body {
 .mobilePopup .popupList {
   list-style-type: none;
   left: 0;
+  /* padding: 5% 10%; */
 }
 
 .mobilePopup span {
