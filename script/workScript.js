@@ -45,8 +45,6 @@ const workData = [
   },
 ];
 
-const btn = [];
-
 function languages(languages) {
   return `${languages.map((language) => `<li>${language}</li>`).join('')} `;
 }
@@ -136,11 +134,11 @@ function workPopup(works) {
 
 const modal = document.getElementById('firstPopup');
 
-if(document.getElementById('1')) {
-  document.getElementById('1').onclick  = () => {  
-     modal.innerHTML = workPopup(workPopUp[1]);
-     modal.style.display = 'block';
-     const span = document.getElementById('firstClose');
+if (document.getElementById('1')) {
+  document.getElementById('1').onclick = () => {
+    modal.innerHTML = workPopup(workPopUp[1]);
+    modal.style.display = 'block';
+    const span = document.getElementById('firstClose');
     span.addEventListener ('click', () => {
     modal.style.display = 'none';
     });
@@ -197,10 +195,10 @@ if(document.getElementById('6')) {
      modal.style.display = 'block';
      const span = document.getElementById('firstClose');
     span.addEventListener ('click', () => {
-    modal.style.display = 'none';
+      modal.style.display = 'none';
     });
   };
-} 
+}
 
 window.onclick = (event) => {
   if (event.target === modal) {
