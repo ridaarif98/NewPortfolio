@@ -342,14 +342,14 @@ body {
   position: relative;
   width: 100%;
   border-radius: 3%;
-  padding: 10px;
+  padding: 20px 10px;
   height: 30%;
 }
 
 .flex-box1 h1 {
   font-size: 32px;
   font-weight: 600;
-  padding-left: 11px;
+  padding-left: 30px;
   line-height: 44px;
   color: #172b4d;
   text-align: left;
@@ -360,6 +360,7 @@ body {
   justify-content: left;
   left: 0;
   margin-right: 5px;
+  padding-left: 30px;
 }
 
 .list-boxPop i {
@@ -396,17 +397,19 @@ body {
 
 .flex-box1 p {
   justify-content: left;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: normal;
   line-height: 24px;
   color: #344563;
-  padding: 10px;
+  padding: 10px 30px;
 }
 
 .See-btn1 {
   width: 100%;
   list-style-type: none;
-  padding: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
   display: flex;
   justify-content: left;
   margin-bottom: 100px;
