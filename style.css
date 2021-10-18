@@ -293,6 +293,101 @@ body {
   background: #03492c;
   border: 3px solid rgb(201, 189, 189);
 }
+ /* Design New Popup */
+
+ .workMainDiv {
+   display: flex;
+   background-color: #fff;
+   flex-direction: column;
+   height: auto;
+   width: 70%;
+   margin: 5vh 15%;
+   border-radius: 10px;
+ }
+
+ .workMainDiv span {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 24px;
+  padding: 5px 10px;
+  color: rgb(29, 28, 28);
+}
+
+.workImgDiv {
+  display: flex;
+  flex-direction: column;
+  height: 54%;
+  width: 96%;
+  margin: 2%;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.workImgDiv img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.workContentDiv {
+  display: flex;
+  flex-direction: column;
+  /* height: 44%;
+  width: 96%; */
+  margin: 2%;
+}
+
+.workHeadingDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.workHeadingDiv h1 {
+  font-size: 32px;
+  font-weight: 600;
+  padding-left: 10px;
+  line-height: 44px;
+  color: #172b4d;
+  text-align: left;
+}
+
+.workHeadingDiv .workButtonDiv {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.workButtonDiv button {
+  margin-right: 5px;
+  display: flex;
+  padding: 10px 12px;
+  width: 150px;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  height: 48px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.workButtonDiv i {
+  padding-top: 8px;
+  padding-left: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.workContentDiv p {
+  justify-content: left;
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #344563;
+  padding: 5px 10px;
+}
 
 /* mobilePopup for flexBox */
 .mobilePopup {
@@ -308,18 +403,10 @@ body {
   background: #c1c7d0;
 }
 
-.mobilePopup .popupList {
+/* .mobilePopup .popupList {
   list-style-type: none;
   left: 0;
-}
-
-.mobilePopup span {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  font-size: 24px;
-  color: white;
-}
+} */
 
 .flex-box1 {
   display: flex;
@@ -338,37 +425,37 @@ body {
   list-style: none;
 }
 
-.flex-box1 img {
+/* .flex-box1 img {
   position: relative;
   width: 100%;
   border-radius: 3%;
   padding: 20px 10px;
   height: 30%;
-}
+} */
 
-.flex-box1 h1 {
+/* .flex-box1 h1 {
   font-size: 32px;
   font-weight: 600;
   padding-left: 30px;
   line-height: 44px;
   color: #172b4d;
   text-align: left;
-}
+} */
 
 .list-boxPop {
   display: flex;
   justify-content: left;
   left: 0;
   margin-right: 5px;
-  padding-left: 30px;
+  /* padding-left: 30px; */
 }
 
-.list-boxPop i {
+/* .list-boxPop i {
   position: absolute;
   color: white;
   right: 0;
   top: 0;
-}
+} */
 
 .list-boxPop ul {
   padding: 10px 12px;
@@ -395,14 +482,14 @@ body {
   letter-spacing: 0.03em;
 }
 
-.flex-box1 p {
+/* .flex-box1 p {
   justify-content: left;
   font-size: 19px;
   font-weight: normal;
   line-height: 24px;
   color: #344563;
   padding: 10px 30px;
-}
+} */
 
 .See-btn1 {
   width: 100%;

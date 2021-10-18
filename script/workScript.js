@@ -110,9 +110,8 @@ function languagesPopupDesktop(languages) {
   return `${languages.map((language) => `<li>${language}</li>`).join('')}`;
 }
 
-function workPopup(works) {
-  return `
-    <ul class="popupList">
+
+{/* <ul class="popupList">
      <li class="flex-box1">
        <ul class="firstListPop">
         <li>
@@ -134,12 +133,38 @@ function workPopup(works) {
         <li><a href=${works.sourceLink}><button type="button" class="see-project">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
       </ul>
     </li>
-  </ul>`;
+  </ul> */}
+
+
+function workPopup(works) {
+  return `
+  <div class="workMainDiv">
+    <span class="cl-tag fa fa-close" id="firstClose"></span>
+    <div class="workImgDiv">
+      <img src=${works.photo} alt="My-Work" id="closeTab">
+    </div>
+  <div class="workContentDiv">
+    <div class="workHeadingDiv">
+      <h1>${works.heading}</h1>
+      <ul class="workButtonDiv">
+        <li><a href=${works.liveLink}><button type="button" >${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></a></li>
+        <li><a href=${works.sourceLink}><button type="button">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
+      </ul>
+    </div>
+    <div class="list-boxPop">
+      <ul>
+          ${(window.innerWidth < 768) ? languagesPopup(works.languages_list) : languagesPopupDesktop(works.desktoplist)}
+      </ul>
+    </div>
+    <p>${works.description}</p>
+  </div>
+  </div>
+    `;
 }
 
 const modal = document.getElementById('firstPopup');
 
-if(document.getElementById('1')){
+if (document.getElementById('1')){
   document.getElementById('1').onclick = () => {
     modal.innerHTML = workPopup(workPopUp[1]);
     modal.style.display = 'block';
