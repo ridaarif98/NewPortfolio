@@ -164,67 +164,68 @@ function workPopup(works) {
 
 const modal = document.getElementById('firstPopup');
 
-if (document.getElementById('1')){
+if (document.getElementById('1')) {
   document.getElementById('1').onclick = () => {
     modal.innerHTML = workPopup(workPopUp[1]);
     modal.style.display = 'block';
     const span = document.getElementById('firstClose');
-    span.addEventListener ('click', () => {
-    modal.style.display = 'none';
+    span.addEventListener('click', () => {
+      modal.style.display = 'none';
     });
   };
-} 
+}
 
-if(document.getElementById('2')) {
-  document.getElementById('2').onclick  = () => {  
-     modal.innerHTML = workPopup(workPopUp[0]);
-     modal.style.display = 'block';
-     const span = document.getElementById('firstClose');
-    span.addEventListener ('click', () => {
-    modal.style.display = 'none';
+
+if (document.getElementById('2')) {
+  document.getElementById('2').onclick = () => {
+    modal.innerHTML = workPopup(workPopUp[0]);
+    modal.style.display = 'block';
+    const span = document.getElementById('firstClose');
+    span.addEventListener('click', () => {
+      modal.style.display = 'none';
     });
   };
-} 
+}
 
-if(document.getElementById('3')) {
-  document.getElementById('3').onclick  = () => {  
-     modal.innerHTML = workPopup(workPopUp[0]);
-     modal.style.display = 'block';
-     const span = document.getElementById('firstClose');
-    span.addEventListener ('click', () => {
-    modal.style.display = 'none';
+if (document.getElementById('3')) {
+  document.getElementById('3').onclick = () => {
+    modal.innerHTML = workPopup(workPopUp[0]);
+    modal.style.display = 'block';
+    const span = document.getElementById('firstClose');
+    span.addEventListener('click', () => {
+      modal.style.display = 'none';
     });
   };
-} 
+}
 
-if(document.getElementById('4')) {
-  document.getElementById('4').onclick  = () => {  
-     modal.innerHTML = workPopup(workPopUp[0]);
-     modal.style.display = 'block';
-     const span = document.getElementById('firstClose');
-    span.addEventListener ('click', () => {
-    modal.style.display = 'none';
+if (document.getElementById('4')) {
+  document.getElementById('4').onclick = () => {
+    modal.innerHTML = workPopup(workPopUp[0]);
+    modal.style.display = 'block';
+    const span = document.getElementById('firstClose');
+    span.addEventListener('click', () => {
+      modal.style.display = 'none';
     });
   };
-} 
+}
 
-if(document.getElementById('5')) {
-  document.getElementById('5').onclick  = () => {  
-     modal.innerHTML = workPopup(workPopUp[0]);
-     modal.style.display = 'block';
-     const span = document.getElementById('firstClose');
-    span.addEventListener ('click', () => {
-    modal.style.display = 'none';
+if (document.getElementById('5')) {
+  document.getElementById('5').onclick = () => {
+    modal.innerHTML = workPopup(workPopUp[0]);
+    modal.style.display = 'block';
+    const span = document.getElementById('firstClose');
+    span.addEventListener('click', () => {
+      modal.style.display = 'none';
     });
   };
-} 
+}
 
-if(document.getElementById('6')) {
-  document.getElementById('6').onclick  = () => {  
-     modal.innerHTML = workPopup(workPopUp[0]);
-     modal.style.display = 'block';
-     const span = document.getElementById('firstClose');
-    span.addEventListener ('click', () => {
+if (document.getElementById('6')) {
+  document.getElementById('6').onclick = () => {
+    modal.innerHTML = workPopup(workPopUp[0]);
+    modal.style.display = 'block';
+    const span = document.getElementById('firstClose');
+    span.addEventListener('click', () => {
       modal.style.display = 'none';
     });
   };
