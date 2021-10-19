@@ -345,8 +345,10 @@ body {
 
 .workHeadingDiv h1 {
   font-size: 32px;
-  font-weight: 600;
-  padding-left: 10px;
+  font-weight: 700;
+  padding-left: 5px;
+  padding-right: 0;
+  margin-right: 0;
   line-height: 44px;
   color: #172b4d;
   text-align: left;
@@ -356,6 +358,8 @@ body {
   display: flex;
   flex-direction: row;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .workButtonDiv button {
@@ -400,7 +404,9 @@ body {
   bottom: 0;
   overflow: auto;
   z-index: 1;
-  background: #c1c7d0;
+  /* background: #c1c7d0; */
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
 }
 
 /* .mobilePopup .popupList {
@@ -408,7 +414,7 @@ body {
   left: 0;
 } */
 
-.flex-box1 {
+/* .flex-box1 {
   display: flex;
   left: 0;
   flex-direction: column;
@@ -418,12 +424,12 @@ body {
   margin-right: 6%;
   margin-top: 20px;
   margin-bottom: 10px;
-}
+} */
 
-.flex-box1 .firstListPop {
+/* .flex-box1 .firstListPop {
   padding: 0;
   list-style: none;
-}
+} */
 
 /* .flex-box1 img {
   position: relative;
@@ -491,7 +497,7 @@ body {
   padding: 10px 30px;
 } */
 
-.See-btn1 {
+/* .See-btn1 {
   width: 100%;
   list-style-type: none;
   padding-top: 8px;
@@ -501,9 +507,9 @@ body {
   justify-content: left;
   margin-bottom: 100px;
   flex-wrap: wrap;
-}
+} */
 
-.See-btn1 .see-project {
+/* .See-btn1 .see-project {
   margin-right: 5px;
   display: flex;
   padding: 10px 12px;
@@ -516,14 +522,14 @@ body {
   font-size: 20px;
   color: #fff;
   text-align: center;
-}
+} */
 
-.See-btn1 i {
+/* .See-btn1 i {
   padding-top: 8px;
   padding-left: 10px;
   font-size: 16px;
   color: white;
-}
+} */
 
 .aboutMe {
   display: flex;
@@ -783,6 +789,57 @@ body {
   .languageDetail {
     flex-direction: column;
   }
+
+  .workMainDiv {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    margin: 5vh 10%;
+    border-radius: 10px;
+  }
+
+  .workImgDiv {
+    display: flex;
+    flex-direction: column;
+    height: 44%;
+    width: 96%;
+    margin: 2%;
+    padding: 0;
+    border-radius: 5px;
+  }
+
+  .workContentDiv p {
+    justify-content: left;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #344563;
+    padding: 5px 10px;
+  }
+  
+  .workHeadingDiv .workButtonDiv {
+    display: none;
+  }
+
+  .mobileButtonDiv {
+    display: block;
+  }
+
+  .mobileButtonDiv .workButtonDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 5px 0;
+    list-style-type: none;
+  }
+
+  .mobileButtonDiv .workButtonDiv li {
+    margin: 2px;
+  }
 }
 
 /* Media query for medium screen */
@@ -954,6 +1011,28 @@ body {
   .aboutContact .email-link {
     display: none;
   }
+
+  .workHeadingDiv .workButtonDiv {
+    display: none;
+  }
+
+  .mobileButtonDiv {
+    display: block;
+  }
+
+  .mobileButtonDiv .workButtonDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 5px 0;
+    list-style-type: none;
+  }
+
+  .mobileButtonDiv .workButtonDiv li {
+    margin: 2px;
+  }
 }
 
 /* For desktop */
@@ -997,20 +1076,20 @@ body {
     font-size: 20px;
   }
 
-  .firstListPop h1 {
+  /* .firstListPop h1 {
     width: 50%;
-  }
+  } */
 
-  .See-btn1 {
+  /* .See-btn1 {
     width: 40%;
     right: 0;
     position: absolute;
     margin-top: 69%;
-  }
+  } */
 
-  .See-btn1 .see-project {
+  /* .See-btn1 .see-project {
     margin-right: 12px;
-  }
+  } */
 
   .aboutMe p {
     text-align: center;
@@ -1128,6 +1207,10 @@ body {
   }
 
   .aboutContact .email-link {
+    display: none;
+  }
+
+  .mobileButtonDiv {
     display: none;
   }
 }
