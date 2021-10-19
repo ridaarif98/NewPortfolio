@@ -45,6 +45,13 @@ body {
 
 .nav-bar-list li a {
   color: #344563;
+  text-decoration: none;
+}
+
+.nav-bar-list li:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+  text-decoration: none;
 }
 
 .nav-bar i {
@@ -122,6 +129,15 @@ body {
 .fa-linkedin,
 .fa-medium {
   color: #172b4d;
+}
+
+.fa-angellist:hover,
+.fa-twitter:hover,
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-medium:hover {
+  color: #253f6e;
+  transform: scale(1.1);
 }
 
 .headline .fa-chevron-circle-down {
