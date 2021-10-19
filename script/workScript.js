@@ -110,32 +110,6 @@ function languagesPopupDesktop(languages) {
   return `${languages.map((language) => `<li>${language}</li>`).join('')}`;
 }
 
-
-{/* <ul class="popupList">
-     <li class="flex-box1">
-       <ul class="firstListPop">
-        <li>
-         
-        <span class="cl-tag fa fa-close" id="firstClose"></span>
-       <img src=${works.photo} alt="My-Work" id="closeTab">
-        </li>
-        <li><h1>${works.heading}</h1></li>
-       </ul>
-      
-       <div class="list-boxPop">
-         <ul>
-          ${(window.innerWidth < 768) ? languagesPopup(works.languages_list) : languagesPopupDesktop(works.desktoplist)}
-         </ul>
-        </div>
-        <p>${works.description}</p>
-      <ul class="See-btn1">
-        <li><a href=${works.liveLink}><button type="button" class="see-project">${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></a></li>
-        <li><a href=${works.sourceLink}><button type="button" class="see-project">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
-      </ul>
-    </li>
-  </ul> */}
-
-
 function workPopup(works) {
   return `
   <div class="workMainDiv">

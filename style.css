@@ -332,8 +332,6 @@ body {
 .workContentDiv {
   display: flex;
   flex-direction: column;
-  /* height: 44%;
-  width: 96%; */
   margin: 2%;
 }
 
@@ -345,10 +343,8 @@ body {
 
 .workHeadingDiv h1 {
   font-size: 32px;
-  font-weight: 700;
-  padding-left: 5px;
-  padding-right: 0;
-  margin-right: 0;
+  font-weight: 600;
+  padding-left: 10px;
   line-height: 44px;
   color: #172b4d;
   text-align: left;
@@ -358,8 +354,6 @@ body {
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .workButtonDiv button {
@@ -404,49 +398,9 @@ body {
   bottom: 0;
   overflow: auto;
   z-index: 1;
-  /* background: #c1c7d0; */
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
 }
-
-/* .mobilePopup .popupList {
-  list-style-type: none;
-  left: 0;
-} */
-
-/* .flex-box1 {
-  display: flex;
-  left: 0;
-  flex-direction: column;
-  background-color: white;
-  border: 1px solid #cdd2e0;
-  border-radius: 3%;
-  margin-right: 6%;
-  margin-top: 20px;
-  margin-bottom: 10px;
-} */
-
-/* .flex-box1 .firstListPop {
-  padding: 0;
-  list-style: none;
-} */
-
-/* .flex-box1 img {
-  position: relative;
-  width: 100%;
-  border-radius: 3%;
-  padding: 20px 10px;
-  height: 30%;
-} */
-
-/* .flex-box1 h1 {
-  font-size: 32px;
-  font-weight: 600;
-  padding-left: 30px;
-  line-height: 44px;
-  color: #172b4d;
-  text-align: left;
-} */
 
 .list-boxPop {
   display: flex;
@@ -455,13 +409,6 @@ body {
   margin-right: 5px;
   /* padding-left: 30px; */
 }
-
-/* .list-boxPop i {
-  position: absolute;
-  color: white;
-  right: 0;
-  top: 0;
-} */
 
 .list-boxPop ul {
   padding: 10px 12px;
@@ -488,48 +435,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* .flex-box1 p {
-  justify-content: left;
-  font-size: 19px;
-  font-weight: normal;
-  line-height: 24px;
-  color: #344563;
-  padding: 10px 30px;
-} */
-
-/* .See-btn1 {
-  width: 100%;
-  list-style-type: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: left;
-  margin-bottom: 100px;
-  flex-wrap: wrap;
-} */
-
-/* .See-btn1 .see-project {
-  margin-right: 5px;
-  display: flex;
-  padding: 10px 12px;
-  align-self: center;
-  background: #36b37f;
-  border-radius: 4px;
-  border: none;
-  height: 48px;
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-} */
-
-/* .See-btn1 i {
-  padding-top: 8px;
-  padding-left: 10px;
-  font-size: 16px;
-  color: white;
-} */
 
 .aboutMe {
   display: flex;
@@ -838,7 +743,7 @@ body {
   }
 
   .mobileButtonDiv .workButtonDiv li {
-    margin: 2px;
+    margin: 2;
   }
 }
 
@@ -1019,20 +924,6 @@ body {
   .mobileButtonDiv {
     display: block;
   }
-
-  .mobileButtonDiv .workButtonDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 5px 0;
-    list-style-type: none;
-  }
-
-  .mobileButtonDiv .workButtonDiv li {
-    margin: 2px;
-  }
 }
 
 /* For desktop */
@@ -1075,21 +966,6 @@ body {
     font-weight: 400;
     font-size: 20px;
   }
-
-  /* .firstListPop h1 {
-    width: 50%;
-  } */
-
-  /* .See-btn1 {
-    width: 40%;
-    right: 0;
-    position: absolute;
-    margin-top: 69%;
-  } */
-
-  /* .See-btn1 .see-project {
-    margin-right: 12px;
-  } */
 
   .aboutMe p {
     text-align: center;
