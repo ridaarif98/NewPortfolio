@@ -135,7 +135,7 @@ function workPopup(works) {
     <ul class="workButtonDiv">
         <li><a href=${works.liveLink}><button type="button" >${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></a></li>
         <li><a href=${works.sourceLink}><button type="button">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
-      </ul>
+    </ul>
     </div>
 
   </div>
