@@ -137,7 +137,6 @@ function workPopup(works) {
         <li><a href=${works.sourceLink}><button type="button">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
     </ul>
     </div>
-
   </div>
   </div>
     `;
@@ -155,7 +154,6 @@ if (document.getElementById('1')) {
     });
   };
 }
-
 
 if (document.getElementById('2')) {
   document.getElementById('2').onclick = () => {

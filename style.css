@@ -43,9 +43,63 @@ body {
   line-height: 20px;
 }
 
+.workButtonDiv a {
+  text-decoration: none;
+}
+
 .nav-bar-list li a {
   color: #344563;
   text-decoration: none;
+}
+
+.icon-link ul li {
+  padding: 13px;
+  font-size: 25px;
+  color: #505f79;
+}
+
+.list-box ul li {
+  font-size: 12px;
+  height: 36px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #3a4a42;
+  background: #ebf0ee;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+}
+
+.list-boxPop ul li {
+  font-size: 12px;
+  line-height: 16px;
+  height: 36px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #3a4a42;
+  background: #ebf0ee;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+}
+
+.list-language ul li {
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #36b37e;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  margin: 5px;
 }
 
 .nav-bar-list li:hover {
@@ -115,12 +169,6 @@ body {
   display: flex;
   padding-left: 0;
   flex-direction: row;
-}
-
-.icon-link ul li {
-  padding: 13px;
-  font-size: 25px;
-  color: #505f79;
 }
 
 .fa-angellist,
@@ -232,22 +280,6 @@ body {
   flex-wrap: wrap;
 }
 
-.list-box ul li {
-  font-size: 12px;
-  height: 36px;
-  padding-right: 7px;
-  padding-left: 7px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #3a4a42;
-  background: #ebf0ee;
-  border-radius: 4px;
-  letter-spacing: 0.03em;
-}
-
 .See-btn {
   list-style-type: none;
   padding: 1px;
@@ -309,6 +341,7 @@ body {
   background: #03492c;
   border: 3px solid rgb(201, 189, 189);
 }
+
 /* Design New Popup */
 
 .workMainDiv {
@@ -372,10 +405,6 @@ body {
   list-style: none;
 }
 
-.workButtonDiv a {
-  text-decoration: none;
-}
-
 .workButtonDiv a:hover {
   text-decoration: none;
 }
@@ -396,8 +425,6 @@ body {
 }
 
 .workButtonDiv button:hover {
-  /* font-weight: bold; */
-  /* width: 160px; */
   background: #21df8f;
   border: 1px solid grey;
   transform: scale(1.05);
@@ -422,6 +449,7 @@ body {
 .mobileButtonDiv ul {
   list-style-type: none;
 }
+
 /* mobilePopup for flexBox */
 .mobilePopup {
   display: none;
@@ -442,7 +470,6 @@ body {
   justify-content: left;
   left: 0;
   margin-right: 5px;
-  /* padding-left: 30px; */
 }
 
 .list-boxPop ul {
@@ -451,23 +478,6 @@ body {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.list-boxPop ul li {
-  font-size: 12px;
-  line-height: 16px;
-  height: 36px;
-  padding-right: 7px;
-  padding-left: 7px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  font-weight: 600;
-  color: #3a4a42;
-  background: #ebf0ee;
-  border-radius: 4px;
-  letter-spacing: 0.03em;
 }
 
 .aboutMe {
@@ -556,17 +566,6 @@ body {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 20px;
-}
-
-.list-language ul li {
-  padding: 10px;
-  background: #fff;
-  border-radius: 8px;
-  font-size: 14px;
-  color: #36b37e;
-  letter-spacing: 0.03em;
-  font-weight: 600;
-  margin: 5px;
 }
 
 .aboutContact {
@@ -719,7 +718,8 @@ body {
   }
 
   .aboutMe {
-    background: url(./Images/illustration1.svg) top right no-repeat,
+    background:
+      url(./Images/illustration1.svg) top right no-repeat,
       url(./Images/illustration2.svg) bottom 25px left no-repeat;
     padding: 10px;
     margin-top: 30px;
@@ -901,7 +901,8 @@ body {
   }
 
   .aboutMe {
-    background: url(./Images/aboutFirst.svg) top right no-repeat,
+    background:
+      url(./Images/aboutFirst.svg) top right no-repeat,
       url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
     background-size: 150px;
     padding: 10px;
@@ -924,12 +925,13 @@ body {
   }
 
   .aboutContact {
-    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 70px
-        right 0 no-repeat,
+    background:
+      url(./Images/contactform-illustratoin-3-desktop.svg) bottom 70px
+      right 0 no-repeat,
       url(./Images/illustration-1-contact-form-desktop.svg) bottom 50px left 0
-        no-repeat,
+      no-repeat,
       url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 80px left
-        200px no-repeat;
+      200px no-repeat;
     background-size: 120px;
   }
 
@@ -1096,7 +1098,8 @@ body {
   }
 
   .aboutMe {
-    background: url(./Images/aboutFirst.svg) top right no-repeat,
+    background:
+      url(./Images/aboutFirst.svg) top right no-repeat,
       url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
     background-size: 170px;
     padding: 10px;
@@ -1113,12 +1116,13 @@ body {
   }
 
   .aboutContact {
-    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 80px
-        right 0 no-repeat,
+    background:
+      url(./Images/contactform-illustratoin-3-desktop.svg) bottom 80px
+      right 0 no-repeat,
       url(./Images/illustration-1-contact-form-desktop.svg) bottom 60px left 0
-        no-repeat,
+      no-repeat,
       url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 90px left
-        200px no-repeat;
+      200px no-repeat;
     background-size: 120px;
   }
 
