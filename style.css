@@ -797,8 +797,22 @@ body {
     display: none;
   }
 
+  .mobileButtonDiv ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 5px 0;
+  }
+
   .header .nav-bar ul {
     display: block;
+  }
+
+  .mobileButtonDiv ul li {
+    margin: 2px;
   }
 
   .header .nav-bar ul li {
@@ -968,19 +982,6 @@ body {
     display: block;
   }
 
-  .mobileButtonDiv ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 5px 0;
-  }
-
-  .mobileButtonDiv ul li {
-    margin: 2px;
-  }
 }
 
 /* For desktop */
