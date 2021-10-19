@@ -112,29 +112,34 @@ function languagesPopupDesktop(languages) {
 
 function workPopup(works) {
   return `
-    <ul class="popupList">
-     <li class="flex-box1">
-       <ul class="firstListPop">
-        <li>
-         
-        <span class="cl-tag fa fa-close" id="firstClose"></span>
-       <img src=${works.photo} alt="My-Work" id="closeTab">
-        </li>
-        <li><h1>${works.heading}</h1></li>
-       </ul>
-      
-       <div class="list-boxPop">
-         <ul>
-          ${(window.innerWidth < 768) ? languagesPopup(works.languages_list) : languagesPopupDesktop(works.desktoplist)}
-         </ul>
-        </div>
-        <p>${works.description}</p>
-      <ul class="See-btn1">
-        <li><a href=${works.liveLink}><button type="button" class="see-project">${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></a></li>
-        <li><a href=${works.sourceLink}><button type="button" class="see-project">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
+  <div class="workMainDiv">
+    <span class="cl-tag fa fa-close" id="firstClose"></span>
+    <div class="workImgDiv">
+      <img src=${works.photo} alt="My-Work" id="closeTab">
+    </div>
+  <div class="workContentDiv">
+    <div class="workHeadingDiv">
+      <h1>${works.heading}</h1>
+      <ul class="workButtonDiv">
+        <li><a href=${works.liveLink}><button type="button" >${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></a></li>
+        <li><a href=${works.sourceLink}><button type="button">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
       </ul>
-    </li>
-  </ul>`;
+    </div>
+    <div class="list-boxPop">
+      <ul>
+          ${(window.innerWidth < 768) ? languagesPopup(works.languages_list) : languagesPopupDesktop(works.desktoplist)}
+      </ul>
+    </div>
+    <p>${works.description}</p>
+    <div class="mobileButtonDiv">
+    <ul class="workButtonDiv">
+        <li><a href=${works.liveLink}><button type="button" >${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></a></li>
+        <li><a href=${works.sourceLink}><button type="button">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
+    </ul>
+    </div>
+  </div>
+  </div>
+    `;
 }
 
 const modal = document.getElementById('firstPopup');

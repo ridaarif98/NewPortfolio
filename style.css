@@ -43,8 +43,69 @@ body {
   line-height: 20px;
 }
 
+.workButtonDiv a {
+  text-decoration: none;
+}
+
 .nav-bar-list li a {
   color: #344563;
+  text-decoration: none;
+}
+
+.icon-link ul li {
+  padding: 13px;
+  font-size: 25px;
+  color: #505f79;
+}
+
+.list-box ul li {
+  font-size: 12px;
+  height: 36px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #3a4a42;
+  background: #ebf0ee;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+}
+
+.list-boxPop ul li {
+  font-size: 12px;
+  line-height: 16px;
+  height: 36px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #3a4a42;
+  background: #ebf0ee;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+}
+
+.list-language ul li {
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #36b37e;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.nav-bar-list li:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+  text-decoration: none;
 }
 
 .nav-bar i {
@@ -56,7 +117,7 @@ body {
 }
 
 .headline {
-  background-image: url("./Images/header-illsutration-mobile.png");
+  background-image: url('./Images/header-illsutration-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: inherit;
@@ -110,18 +171,21 @@ body {
   flex-direction: row;
 }
 
-.icon-link ul li {
-  padding: 13px;
-  font-size: 25px;
-  color: #505f79;
-}
-
 .fa-angellist,
 .fa-twitter,
 .fa-github,
 .fa-linkedin,
 .fa-medium {
   color: #172b4d;
+}
+
+.fa-angellist:hover,
+.fa-twitter:hover,
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-medium:hover {
+  color: #253f6e;
+  transform: scale(1.1);
 }
 
 .headline .fa-chevron-circle-down {
@@ -216,22 +280,6 @@ body {
   flex-wrap: wrap;
 }
 
-.list-box ul li {
-  font-size: 12px;
-  height: 36px;
-  padding-right: 7px;
-  padding-left: 7px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #3a4a42;
-  background: #ebf0ee;
-  border-radius: 4px;
-  letter-spacing: 0.03em;
-}
-
 .See-btn {
   list-style-type: none;
   padding: 1px;
@@ -294,6 +342,114 @@ body {
   border: 3px solid rgb(201, 189, 189);
 }
 
+/* Design New Popup */
+
+.workMainDiv {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  height: auto;
+  width: 70%;
+  margin: 5vh 15%;
+  border-radius: 10px;
+}
+
+.workMainDiv span {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 24px;
+  padding: 5px 10px;
+  color: rgb(29, 28, 28);
+}
+
+.workImgDiv {
+  display: flex;
+  flex-direction: column;
+  height: 54%;
+  width: 96%;
+  margin: 2%;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.workImgDiv img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.workContentDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+.workHeadingDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.workHeadingDiv h1 {
+  font-size: 32px;
+  font-weight: 600;
+  padding-left: 10px;
+  line-height: 44px;
+  color: #172b4d;
+  text-align: left;
+}
+
+.workHeadingDiv .workButtonDiv {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.workButtonDiv a:hover {
+  text-decoration: none;
+}
+
+.workButtonDiv button {
+  margin-right: 5px;
+  display: flex;
+  padding: 10px 12px;
+  width: 150px;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  height: 48px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.workButtonDiv button:hover {
+  background: #21df8f;
+  border: 1px solid grey;
+  transform: scale(1.05);
+}
+
+.workButtonDiv i {
+  padding-top: 8px;
+  padding-left: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.workContentDiv p {
+  justify-content: left;
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #344563;
+  padding: 5px 10px;
+}
+
+.mobileButtonDiv ul {
+  list-style-type: none;
+}
+
 /* mobilePopup for flexBox */
 .mobilePopup {
   display: none;
@@ -305,54 +461,8 @@ body {
   bottom: 0;
   overflow: auto;
   z-index: 1;
-  background: #c1c7d0;
-}
-
-.mobilePopup .popupList {
-  list-style-type: none;
-  left: 0;
-}
-
-.mobilePopup span {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  font-size: 24px;
-  color: white;
-}
-
-.flex-box1 {
-  display: flex;
-  left: 0;
-  flex-direction: column;
-  background-color: white;
-  border: 1px solid #cdd2e0;
-  border-radius: 3%;
-  margin-right: 6%;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.flex-box1 .firstListPop {
-  padding: 0;
-  list-style: none;
-}
-
-.flex-box1 img {
-  position: relative;
-  width: 100%;
-  border-radius: 3%;
-  padding: 20px 10px;
-  height: 30%;
-}
-
-.flex-box1 h1 {
-  font-size: 32px;
-  font-weight: 600;
-  padding-left: 30px;
-  line-height: 44px;
-  color: #172b4d;
-  text-align: left;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
 }
 
 .list-boxPop {
@@ -360,14 +470,6 @@ body {
   justify-content: left;
   left: 0;
   margin-right: 5px;
-  padding-left: 30px;
-}
-
-.list-boxPop i {
-  position: absolute;
-  color: white;
-  right: 0;
-  top: 0;
 }
 
 .list-boxPop ul {
@@ -376,66 +478,6 @@ body {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.list-boxPop ul li {
-  font-size: 12px;
-  line-height: 16px;
-  height: 36px;
-  padding-right: 7px;
-  padding-left: 7px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  font-weight: 600;
-  color: #3a4a42;
-  background: #ebf0ee;
-  border-radius: 4px;
-  letter-spacing: 0.03em;
-}
-
-.flex-box1 p {
-  justify-content: left;
-  font-size: 19px;
-  font-weight: normal;
-  line-height: 24px;
-  color: #344563;
-  padding: 10px 30px;
-}
-
-.See-btn1 {
-  width: 100%;
-  list-style-type: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: left;
-  margin-bottom: 100px;
-  flex-wrap: wrap;
-}
-
-.See-btn1 .see-project {
-  margin-right: 5px;
-  display: flex;
-  padding: 10px 12px;
-  align-self: center;
-  background: #36b37f;
-  border-radius: 4px;
-  border: none;
-  height: 48px;
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-}
-
-.See-btn1 i {
-  padding-top: 8px;
-  padding-left: 10px;
-  font-size: 16px;
-  color: white;
 }
 
 .aboutMe {
@@ -524,17 +566,6 @@ body {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 20px;
-}
-
-.list-language ul li {
-  padding: 10px;
-  background: #fff;
-  border-radius: 8px;
-  font-size: 14px;
-  color: #36b37e;
-  letter-spacing: 0.03em;
-  font-weight: 600;
-  margin: 5px;
 }
 
 .aboutContact {
@@ -687,7 +718,9 @@ body {
   }
 
   .aboutMe {
-    background: url(./Images/illustration1.svg) top right no-repeat, url(./Images/illustration2.svg) bottom 25px left no-repeat;
+    background:
+      url(./Images/illustration1.svg) top right no-repeat,
+      url(./Images/illustration2.svg) bottom 25px left no-repeat;
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -695,6 +728,57 @@ body {
 
   .languageDetail {
     flex-direction: column;
+  }
+
+  .workMainDiv {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    margin: 5vh 10%;
+    border-radius: 10px;
+  }
+
+  .workImgDiv {
+    display: flex;
+    flex-direction: column;
+    height: 44%;
+    width: 96%;
+    margin: 2%;
+    padding: 0;
+    border-radius: 5px;
+  }
+
+  .workContentDiv p {
+    justify-content: left;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #344563;
+    padding: 5px 10px;
+  }
+
+  .workHeadingDiv .workButtonDiv {
+    display: none;
+  }
+
+  .mobileButtonDiv {
+    display: block;
+  }
+
+  .mobileButtonDiv ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 5px 0;
+    list-style-type: none;
+  }
+
+  .mobileButtonDiv ul li {
+    margin-bottom: 3px;
   }
 }
 
@@ -713,8 +797,22 @@ body {
     display: none;
   }
 
+  .mobileButtonDiv ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 5px 0;
+  }
+
   .header .nav-bar ul {
     display: block;
+  }
+
+  .mobileButtonDiv ul li {
+    margin: 2px;
   }
 
   .header .nav-bar ul li {
@@ -817,7 +915,9 @@ body {
   }
 
   .aboutMe {
-    background: url(./Images/aboutFirst.svg) top right no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
+    background:
+      url(./Images/aboutFirst.svg) top right no-repeat,
+      url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
     background-size: 150px;
     padding: 10px;
     margin-top: 30px;
@@ -839,7 +939,13 @@ body {
   }
 
   .aboutContact {
-    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 70px right 0 no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 50px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 80px left 200px no-repeat;
+    background:
+      url(./Images/contactform-illustratoin-3-desktop.svg) bottom 70px
+      right 0 no-repeat,
+      url(./Images/illustration-1-contact-form-desktop.svg) bottom 50px left 0
+      no-repeat,
+      url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 80px left
+      200px no-repeat;
     background-size: 120px;
   }
 
@@ -866,6 +972,14 @@ body {
 
   .aboutContact .email-link {
     display: none;
+  }
+
+  .workHeadingDiv .workButtonDiv {
+    display: none;
+  }
+
+  .mobileButtonDiv {
+    display: block;
   }
 }
 
@@ -908,21 +1022,6 @@ body {
     line-height: 32px;
     font-weight: 400;
     font-size: 20px;
-  }
-
-  .firstListPop h1 {
-    width: 50%;
-  }
-
-  .See-btn1 {
-    width: 40%;
-    right: 0;
-    position: absolute;
-    margin-top: 69%;
-  }
-
-  .See-btn1 .see-project {
-    margin-right: 12px;
   }
 
   .aboutMe p {
@@ -999,7 +1098,9 @@ body {
   }
 
   .aboutMe {
-    background: url(./Images/aboutFirst.svg) top right no-repeat, url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
+    background:
+      url(./Images/aboutFirst.svg) top right no-repeat,
+      url(./Images/aboutSecond.svg) bottom 25px left no-repeat;
     background-size: 170px;
     padding: 10px;
     margin-top: 30px;
@@ -1015,7 +1116,13 @@ body {
   }
 
   .aboutContact {
-    background: url(./Images/contactform-illustratoin-3-desktop.svg) bottom 80px right 0 no-repeat, url(./Images/illustration-1-contact-form-desktop.svg) bottom 60px left 0 no-repeat, url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 90px left 200px no-repeat;
+    background:
+      url(./Images/contactform-illustratoin-3-desktop.svg) bottom 80px
+      right 0 no-repeat,
+      url(./Images/illustration-1-contact-form-desktop.svg) bottom 60px left 0
+      no-repeat,
+      url(./Images/illustration-2-contact-form-desktop@2x.png) bottom 90px left
+      200px no-repeat;
     background-size: 120px;
   }
 
@@ -1041,6 +1148,10 @@ body {
   }
 
   .aboutContact .email-link {
+    display: none;
+  }
+
+  .mobileButtonDiv {
     display: none;
   }
 }
