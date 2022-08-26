@@ -1,13 +1,13 @@
 # MyPortfolio
+
 # This is MyPortfolio Project
 
-   This is a mobile-first portfolio project built using Semantic HTML, CSS and JavaScript. It includes the navigation bar, the headline, a list of past projects(which includes skills, languages and frameworks used), the about section and a contact form.
-   Also add github Pages to make my Portfolio online available.
+This is a mobile-first portfolio project built using Semantic HTML, CSS and JavaScript. It includes the navigation bar, the headline, a list of past projects(which includes skills, languages and frameworks used), the about section and a contact form.
+Also add github Pages to make my Portfolio online available.
 
+![screenshot](./Images/newPort.png)
 
-  ![screenshot](./Images/newPort.png)
-  
-  ## Built With
+## Built With
 
 - Html,CSS, Javascript
 - Git, Github
@@ -17,8 +17,6 @@
 
 [Live Demo Link](https://ridaarif98.github.io/NewPortfolio/)
 
-
-
 ## Getting Started
 
 **This is an example of how you may create your mobile and desktop responsive porfolio**
@@ -26,16 +24,24 @@
 ## Prerequisites
 
 ### Local Usage
-- Create repository
+
+- To get a local copy of this project:
+
+  Clone this repository or download the Zip folder:
+
+  ```
+   git@github.com:ridaarif98/NewPortfolio.git
+  ```
+
 - Clone it local device using git
 - Add files , commit and push them to github
-- Run linters 
+- Run linters
 - Deploy to resolve errors
 
 ### Tools needed to run project locally
+
 - Git
 - Visual Studio Code
-
 
 ## 👤 Author
 
@@ -43,19 +49,15 @@
 - Twitter: [@twitterhandle](https://twitter.com/Rida29984906)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rida-arif-90945520b/)
 
-
 ## Acknowledgments
 
 - Figma : [Figma Template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A468)
-
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/ridaarif98/NewPortfolio/issues).
-
-
 
 ## Show your support
 
