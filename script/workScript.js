@@ -1,46 +1,44 @@
 const workData = [
   {
     id: 1,
-    name: 'Capstone',
-    photo: './Images/SecondPortfolio.svg',
+    name: 'Awesome Books',
+    photo: './Images/awesomebook.png',
     languages_list: ['CSS', 'Javascript', 'Html'],
     btn_text: 'See Project',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been theindustry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    heading: 'Keeping track of hundreds of components',
   },
   {
     id: 2,
-    name: 'Multi-Post',
-    photo: './Images/SecondPortfolio.svg',
-    languages_list: ['Python', 'Javascript', 'CodeKit', 'Html'],
+    name: 'Recipe App',
+    photo: './Images/recipeapp.png',
+    languages_list: ['Ruby on Rails', 'Postgresql', 'Bootstrap'],
     btn_text: 'See Project',
   },
   {
     id: 3,
-    name: 'Stories',
-    photo: './Images/SecondPortfolio.svg',
-    languages_list: ['CSS', 'Javascript', 'Html'],
+    name: 'Budget App',
+    photo: './Images/budgetapp.png',
+    languages_list: ['Ruby on Rails', 'Postgresql', 'Bootstrap'],
     btn_text: 'See Project',
   },
   {
     id: 4,
-    name: 'Gain+Glory',
-    photo: './Images/SecondPortfolio.svg',
-    languages_list: ['React', 'CSS', 'Html', 'Codekit'],
+    name: 'Doctor Appointment App',
+    photo: './Images/dctrapp.png',
+    languages_list: ['React', 'Ruby on Rails', 'Postgresql'],
     btn_text: 'See Project',
   },
   {
     id: 5,
-    name: 'Capston',
-    photo: './Images/SecondPortfolio.svg',
-    languages_list: ['Ruby on rails', 'CSS', 'Javascript', 'Html'],
+    name: 'Metrics Webapp',
+    photo: './Images/metricsapp.png',
+    languages_list: ['React', 'Redux', 'API', 'Html/CSS'],
     btn_text: 'See Project',
   },
   {
     id: 6,
-    name: 'My Portfolio',
-    photo: './Images/SecondPortfolio.svg',
-    languages_list: ['Ruby on rails', 'CSS', 'Bootstrap', 'Html'],
+    name: 'WorldFood App',
+    photo: './Images/worldfood.png',
+    languages_list: ['JavaScript', 'HTML/CSS'],
     btn_text: 'See Project',
   },
 ];
@@ -76,29 +74,81 @@ document.getElementById('dynamicWork').innerHTML = `${workData.map(workTemplate)
 const workPopUp = [
   {
     id: 1,
-    photo: './Images/SecondPortfolio.svg',
-    languages_list: ['Ruby on rails', 'CSS', 'Javascript'],
+    photo: './Images/awesomebook.png',
+    languages_list: ['HTML', 'CSS', 'Javascript'],
     desktoplist: ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal'],
     btn_text: 'See Project',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been theindustry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    heading: 'Keeping track of hundreds of components',
+    description: '`Awesome Books` is a simple website that allows the user to add and remove books and display them. It also store books in local storage.',
+    heading: 'Awesome Books',
     firstBtn: 'See Live',
     secondBtn: 'See Source',
-    liveLink: 'https://ridaarif98.github.io/NewPortfolio/',
-    sourceLink: 'https://github.com/ridaarif98/NewPortfolio',
+    liveLink: 'https://ridaarif98.github.io/awseomeBooks-m2/',
+    sourceLink: 'https://github.com/ridaarif98/awseomeBooks-m2',
   },
   {
     id: 2,
-    photo: './Images/capstone.png',
-    languages_list: ['HTML', 'CSS', 'JavaScript'],
-    desktoplist: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal'],
+    photo: './Images/recipeapp.png',
+    languages_list: ['Ruby on Rails', 'Postgresql', 'Bootstrap'],
+    desktoplist: ['Codekit', 'Github', 'Bootstrap', 'Terminal'],
     btn_text: 'See Project',
-    description: "Capstone is conference website for 'Women Summit' which is build using HTML, CSS, and JavaScript. It is desktop and mobile responsive. In mobile version it has pop-up menu",
-    heading: 'Women Summit Conference',
+    description: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
+    heading: 'Recipe App',
     firstBtn: 'See Live',
     secondBtn: 'See Source',
-    liveLink: 'https://ridaarif98.github.io/capston/',
-    sourceLink: 'https://github.com/ridaarif98/capston',
+    liveLink: 'https://github.com/ridaarif98/recipe-app',
+    sourceLink: 'https://github.com/ridaarif98/recipe-app',
+  },
+  {
+    id: 3,
+    photo: './Images/budgetapp.png',
+    languages_list: ['Ruby on Rails', 'Postgresql', 'Bootstrap'],
+    desktoplist: ['Codekit', 'Github', 'Bootstrap', 'Terminal'],
+    btn_text: 'See Project',
+    description: 'A mobile web application where a user manage its budget: have a list of transactions associated with a category, so that the user can see how much money it spent and on what.',
+    heading: 'Budget App',
+    firstBtn: 'See Live',
+    secondBtn: 'See Source',
+    liveLink: 'https://lit-ridge-01801.herokuapp.com/',
+    sourceLink: 'https://github.com/ridaarif98/Budget-app',
+  },
+  {
+    id: 4,
+    photo: './Images/dctrapp.png',
+    languages_list: ['React', 'Redux', 'Html/CSS', 'JavaScript', 'Ruby on Rails', 'Postgresql'],
+    desktoplist: ['Codekit', 'Github', 'Bootstrap', 'Terminal'],
+    btn_text: 'See Project',
+    description: 'Doctor Appointment frontend is react frontend application for book an appointment with doctor. This applications is responsive and users can load, create, and delete doctors and appointments. Users need to sign up or sign in to access application. They can sign up or sign in using the sign up and login forms.',
+    heading: 'Doctor Appointment App',
+    firstBtn: 'See Live',
+    secondBtn: 'See Source',
+    liveLink: 'https://appointment-app-frontend.netlify.app/',
+    sourceLink: 'https://github.com/ridaarif98/doctors_appointment_front_end',
+  },
+  {
+    id: 5,
+    photo: './Images/metricsapp.png',
+    languages_list: ['React', 'Redux', 'API', 'Html/CSS'],
+    desktoplist: ['Codekit', 'Github', 'Bootstrap', 'Terminal'],
+    btn_text: 'See Project',
+    description: 'Covid-19 metrics app collects data from different data sources to provide details about covid-v19. You can filter data by continent and country.',
+    heading: 'Metrics Webapp',
+    firstBtn: 'See Live',
+    secondBtn: 'See Source',
+    liveLink: 'https://ridaarif98.github.io/metrics-webapp-capstone/',
+    sourceLink: 'https://github.com/ridaarif98/metrics-webapp-capstone',
+  },
+  {
+    id: 6,
+    photo: './Images/worldfood.png',
+    languages_list: ['JavaScript', 'Webpack', 'HTML/CSS'],
+    desktoplist: ['Codekit', 'Github', 'Bootstrap', 'Terminal'],
+    btn_text: 'See Project',
+    description: 'The JavaScript capstone project (World Food) is about building our own web application based on an external API. The webapp have 2 user interfaces.',
+    heading: 'WorldFood App',
+    firstBtn: 'See Live',
+    secondBtn: 'See Source',
+    liveLink: 'https://medaminedev66.github.io/javascript-capstone/',
+    sourceLink: 'https://github.com/ridaarif98/javascript-capstone',
   },
 ];
 
@@ -146,7 +196,7 @@ const modal = document.getElementById('firstPopup');
 
 if (document.getElementById('1')) {
   document.getElementById('1').onclick = () => {
-    modal.innerHTML = workPopup(workPopUp[1]);
+    modal.innerHTML = workPopup(workPopUp[0]);
     modal.style.display = 'block';
     const span = document.getElementById('firstClose');
     span.addEventListener('click', () => {
@@ -157,7 +207,7 @@ if (document.getElementById('1')) {
 
 if (document.getElementById('2')) {
   document.getElementById('2').onclick = () => {
-    modal.innerHTML = workPopup(workPopUp[0]);
+    modal.innerHTML = workPopup(workPopUp[1]);
     modal.style.display = 'block';
     const span = document.getElementById('firstClose');
     span.addEventListener('click', () => {
@@ -168,7 +218,7 @@ if (document.getElementById('2')) {
 
 if (document.getElementById('3')) {
   document.getElementById('3').onclick = () => {
-    modal.innerHTML = workPopup(workPopUp[0]);
+    modal.innerHTML = workPopup(workPopUp[2]);
     modal.style.display = 'block';
     const span = document.getElementById('firstClose');
     span.addEventListener('click', () => {
@@ -179,7 +229,7 @@ if (document.getElementById('3')) {
 
 if (document.getElementById('4')) {
   document.getElementById('4').onclick = () => {
-    modal.innerHTML = workPopup(workPopUp[0]);
+    modal.innerHTML = workPopup(workPopUp[3]);
     modal.style.display = 'block';
     const span = document.getElementById('firstClose');
     span.addEventListener('click', () => {
@@ -190,7 +240,7 @@ if (document.getElementById('4')) {
 
 if (document.getElementById('5')) {
   document.getElementById('5').onclick = () => {
-    modal.innerHTML = workPopup(workPopUp[0]);
+    modal.innerHTML = workPopup(workPopUp[4]);
     modal.style.display = 'block';
     const span = document.getElementById('firstClose');
     span.addEventListener('click', () => {
@@ -201,7 +251,7 @@ if (document.getElementById('5')) {
 
 if (document.getElementById('6')) {
   document.getElementById('6').onclick = () => {
-    modal.innerHTML = workPopup(workPopUp[0]);
+    modal.innerHTML = workPopup(workPopUp[5]);
     modal.style.display = 'block';
     const span = document.getElementById('firstClose');
     span.addEventListener('click', () => {
