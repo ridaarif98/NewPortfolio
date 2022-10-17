@@ -235,7 +235,6 @@ body {
 .flex-box {
   display: flex;
   flex-direction: column;
-  /* padding-left: 5px; */
   background-color: white;
   border: 1px solid #cdd2e0;
   border-radius: 5%;
