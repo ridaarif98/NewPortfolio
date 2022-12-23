@@ -78,7 +78,7 @@ const workPopUp = [
     languages_list: ['HTML', 'CSS', 'Javascript'],
     desktoplist: ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal'],
     btn_text: 'See Project',
-    description: '`Awesome Books` is a simple website that allows the user to add and remove books and display them. This app also stores <em>books</em> in a local storage',
+    description: '`Awesome Books` is a simple website that allows the user to add and remove books and display them. This app also stores <strong>books</strong> in a local storage',
     heading: 'Awesome Books',
     firstBtn: 'See Live',
     secondBtn: 'See Source',
