@@ -78,7 +78,7 @@ const workPopUp = [
     languages_list: ['HTML', 'CSS', 'Javascript'],
     desktoplist: ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal'],
     btn_text: 'See Project',
-    description: '`Awesome Books` is a simple website that allows the user to add and remove books and display them. This app also stores book in a local storage',
+    description: '`Awesome Books` is a simple website that allows the user to add and remove books and display them. This app also stores <strong>books</strong> in a local storage',
     heading: 'Awesome Books',
     firstBtn: 'See Live',
     secondBtn: 'See Source',
@@ -130,7 +130,7 @@ const workPopUp = [
     languages_list: ['React', 'Redux', 'API', 'Html/CSS'],
     desktoplist: ['Codekit', 'Github', 'Bootstrap', 'Terminal'],
     btn_text: 'See Project',
-    description: '"Covid-19 metrics app collects information from different data sources to provide details about covid-19. You can filter data by continent and country.',
+    description: 'Covid-19 metrics app collects information from different data sources to provide details about covid-19. You can filter data by continent and country.',
     heading: 'Metrics Webapp',
     firstBtn: 'See Live',
     secondBtn: 'See Source',
@@ -171,8 +171,8 @@ function workPopup(works) {
     <div class="workHeadingDiv">
       <h1>${works.heading}</h1>
       <ul class="workButtonDiv">
-        <li><a href=${works.liveLink}><button type="button" >${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></a></li>
-        <li><a href=${works.sourceLink}><button type="button">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
+        <li><a href=${works.liveLink} target="_blank"><button type="button" >${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></a></li>
+        <li><a href=${works.sourceLink} target="_blank"><button type="button">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
       </ul>
     </div>
     <div class="list-boxPop">
@@ -183,8 +183,8 @@ function workPopup(works) {
     <p>${works.description}</p>
     <div class="mobileButtonDiv">
     <ul class="workButtonDiv">
-        <li><a href=${works.liveLink}><button type="button" >${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></a></li>
-        <li><a href=${works.sourceLink}><button type="button">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
+        <li><a href=${works.liveLink} target="_blank"><button type="button" >${works.firstBtn}<i class="fa fa-external-link" aria-hidden="true"></i></button></a></li>
+        <li><a href=${works.sourceLink} target="_blank"><button type="button">${works.secondBtn}<i class="fa fa-github" aria-hidden="true"></i></button></a></li>
     </ul>
     </div>
   </div>
