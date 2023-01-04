@@ -108,7 +108,7 @@ const workPopUp = [
     heading: 'Budget App',
     firstBtn: 'See Live',
     secondBtn: 'See Source',
-    liveLink: 'https://lit-ridge-01801.herokuapp.com/',
+    liveLink: 'https://budget-app-177k.onrender.com/',
     sourceLink: 'https://github.com/ridaarif98/Budget-app',
   },
   {
