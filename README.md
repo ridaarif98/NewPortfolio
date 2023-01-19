@@ -5,8 +5,6 @@
    Also add github Pages to make my Portfolio online available.
 
 
-  
-
   ![screenshot](./Images/newPort.png)
   
   ## Built With
