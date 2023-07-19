@@ -45,7 +45,7 @@ Also add github Pages to make my Portfolio online available.
 
 ## 👤 Author
 
-- GitHub: [@githubhandle](https://github.com/ridaarif98)
+- GitHub: [@ridaarif98](https://github.com/ridaarif98)
 - Twitter: [@twitterhandle](https://twitter.com/Rida29984906)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rida-arif-90945520b/)
 
